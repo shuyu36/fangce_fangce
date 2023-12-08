@@ -3,39 +3,193 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- 預先加載字體樣式表 -->
+    <link rel="stylesheet" href="./css/reset.css" />
+
+    <!-- 載入字體 -->
     <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
       crossorigin="anonymous"
     />
-    <!-- 預先加載字體文件 -->
-    <link
-      rel="preload"
-      as="font"
-      href="https://fonts.gstatic.com/s/notosanstc/v10/-nF7OG829Oofr2wohFbTp9iFOisNA_cTyNromxqQuEMQaF-YFnsMYQ.woff2"
-      crossorigin
-    />
-    <!-- 將字體樣式表連結加入 head 部分 -->
+    <!-- bootstrap -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
-      crossorigin="anonymous"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/fitodac/bsnav@master/dist/bsnav.min.css"
     />
-    <!-- 字體SEO 避免掉字情況 -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/fangce_index.css">
-    <title>Document</title>
+    <!-- nav插件 -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fangce_index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <title>方策官網</title>
   </head>
   <body>
     <header>
-        <div class="top_logo">
-            <img src="" alt="">
+      <div class="navbar navbar-expand-sm bsnav bsnav-brand-top">
+        <a class="navbar-brand" href="#">
+          <img src="./image/fangce_logo_yellow.png" alt="方策logo" />
+        </a>
+        <button class="navbar-toggler toggler-spring">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-xs-center">
+          <ul class="navbar-nav navbar-mobile mr-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">關於方策</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">設計作品</a>
+            </li>
+            <li class="nav-item dropdown dropdown-horizontal">
+              <a class="nav-link" href="#">服務項目<i class="caret"></i></a>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">客製化響應式官網</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">GOOGLE ADS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">社群廣告</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">YOUTUBE-全球最大的影音平台</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">KOL網紅行銷</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">360環景攝影</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">商家攝影</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">商家預約金流系統</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="#">聯絡我們</a></li>
+          </ul>
         </div>
+      </div>
+      <div class="bsnav-mobile">
+        <div class="bsnav-mobile-overlay"></div>
+        <div class="navbar"></div>
+      </div>
     </header>
+    <!-- 輪播banner -->
+    <section>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./image/index_banner_desktop__1.jpg"
+              class="d-block w-100"
+              alt="方策專業美術團隊"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./image/index_banner_desktop__2.jpg"
+              class="d-block w-100"
+              alt="一訂能pay，GOOGLE預定系統"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 服務項目 -->
+    <section class="service_block">
+      <img src="./image/ABOUT.png" alt="ABOUT背景圖" class="bg_ABOUT" />
+      <div class="service_text">
+        <span class="title_blue_black">
+          <h1>OUR</h1>
+          <h1>SERVICE</h1>
+        </span>
+        <h2>服務項目</h2>
+        <h5>
+          方策數位累積超過20年實務經驗，因應各項業務需求，專業領域各司其職，跨部討論、研擬與執行，提供客戶在網路廣告行銷上的全方位解方。
+        </h5>
+      </div>
+      <div class="service_icon">
+        <ul>
+          <li>
+            <a href="">
+              <img src="./image/service_rwd_icon_1.svg" alt="RWD網站設計" />
+              <p>RWD網站設計</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./image/service_google_icon_2.svg" alt="GOOGLE廣告" />
+              <p>GOOGLE廣告</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./image/service_fb_icon_3.svg" alt="FACEBOOK廣告" />
+              <p>FACEBOOK廣告</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./image/service_youtube_icon_4.svg" alt="YOUTUBE廣告" />
+              <p>YOUTUBE廣告</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./image/service_360_icon_5.svg" alt="360環景" />
+              <p>360環景</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./image/service_camera_icon_6.svg" alt="商家攝影" />
+              <p>商家攝影</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./image/service_blogger_icon_7.svg" alt="部落客" />
+              <p>部落客</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./image/service_order_icon_8.svg" alt="商家預約" />
+              <p>商家預約</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/fitodac/bsnav@master/dist/bsnav.min.js"></script>
   </body>
 </html>

@@ -1,3 +1,114 @@
 body {
-    font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Noto Sans TC', 'Montserrat', sans-serif, Verdana;
+    letter-spacing: 3px;
+}
+h1{
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: inherit; /* 可以維持文字原來的顏色，或設定為其他你想要的顏色 */
+}
+
+a:hover {
+  color: #106393;
+}
+/* 字體 */
+
+.title_blue_black{
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title_blue_black :nth-child(1){
+  color: #106393;
+}
+
+.navbar-nav .nav-item.active > .nav-link,
+.navbar-nav .nav-item:active:focus > .nav-link,
+.navbar-nav .nav-item:active > .nav-link,
+.navbar-nav .nav-item:focus > .nav-link,
+.navbar-nav .nav-item:hover > .nav-link {
+  color: #106393;
+}
+.nav-item.active .caret,
+.nav-item:hover .caret {
+  border-top-color: #106393;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+ol, ul {
+  padding: 0
+};
+/* 改nav插件預設字體顏色 */
+
+
+
+/* 寫在手機板 */
+
+.bsnav-mobile .navbar {
+  width: 310px;
+  padding: 90px 0 15px;
+}
+
+/* RWD */
+@media only screen and (max-width: 1660px) {
+}
+
+@media only screen and (max-width: 1366px) {
+}
+
+@media only screen and (max-width: 1266px) {
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 880px) {
+}
+
+@media only screen and (max-width: 769px) {
+}
+
+@media only screen and (max-width: 680px) {
+}
+
+/* 電腦版所有樣式 */
+@media (min-width: 576px) {
+  .navbar-mobile {
+    gap: 100px;
+  }
+
+  .dropdown .navbar-nav .nav-item{
+    gap: 50px;
+  }
+  .nav-item {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+}
+
+/* nav手機改漢堡 */
+@media only screen and (max-width: 575px) {
+  .bsnav-brand-top {
+    padding-top: 10px;
+  }
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+  .dropdown-horizontal .navbar-nav .nav-item .nav-link {
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
 }

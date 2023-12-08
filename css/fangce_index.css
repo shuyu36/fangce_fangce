@@ -1,0 +1,81 @@
+/* 輪播 */
+.carousel{
+    margin-bottom: 100px;
+}
+.carousel-inner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* --------服務項目---------- */
+
+/* ABOUT */
+.bg_ABOUT{
+    position: absolute;
+    left: 0;
+}
+
+/* 文字 */
+.service_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title_blue_black {
+  justify-content: center;
+}
+
+.service_text {
+  text-align: center;
+}
+
+.service_text h2 {
+  margin-bottom: 3rem;
+}
+
+.service_text h5 {
+  text-align: center;
+  width: 50vw;
+}
+
+/* 圖 */
+.service_icon {
+  margin: 0 auto;
+}
+
+.service_icon ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: end;
+  width: 1063px;
+  margin: 60px auto 100px;
+  gap: 80px;
+}
+
+.service_icon li {
+  text-align: center;
+}
+
+.service_icon img {
+  margin-bottom: 10px;
+  width: 30%;
+    height: auto;
+}
+
+.service_icon li {
+  margin-bottom: 20px; /* 設定間距 */
+  transition: transform 0.3s ease; /* 設定變換效果，0.3秒內完成，使用ease函數平滑變換 */
+}
+
+.service_icon li:hover {
+  transform: scale(1.3); /* 放大 */
+/* color: #106393; */
+}
+
+.service_icon li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
