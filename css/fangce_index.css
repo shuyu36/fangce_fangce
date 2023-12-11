@@ -1,6 +1,6 @@
 /* 輪播 */
-.carousel{
-    margin-bottom: 100px;
+.carousel {
+  margin-bottom: 100px;
 }
 .carousel-inner {
   width: 90%;
@@ -10,28 +10,14 @@
 /* --------服務項目---------- */
 
 /* ABOUT */
-.bg_ABOUT{
-    position: absolute;
-    left: 0;
+.bg_ABOUT {
+  position: absolute;
+  left: 0;
 }
 
 /* 文字 */
-.service_block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .title_blue_black {
   justify-content: center;
-}
-
-.service_text {
-  text-align: center;
-}
-
-.service_text h2 {
-  margin-bottom: 3rem;
 }
 
 .service_text h5 {
@@ -60,7 +46,7 @@
 .service_icon img {
   margin-bottom: 10px;
   width: 30%;
-    height: auto;
+  height: auto;
 }
 
 .service_icon li {
@@ -70,7 +56,6 @@
 
 .service_icon li:hover {
   transform: scale(1.3); /* 放大 */
-/* color: #106393; */
 }
 
 .service_icon li a {
@@ -78,4 +63,201 @@
   text-decoration: none;
   text-align: center;
 }
+
+.service_icon li a:hover {
+
+  color: #106393;
+}
+
+
+/* ----------核心價值---------- */
+
+.core_value_block {
+  background: linear-gradient(
+    5deg,
+    #106393 43.2%,
+    rgba(16, 99, 147, 0.63) 82.22%
+  );
+  padding: 3rem;
+  margin-bottom: 100px;
+}
+
+.core_value_text h2 {
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+.core_value_content ul {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  color: #ffffff;
+}
+
+.core_value_content li {
+  text-align: center;
+  width: 30%;
+}
+.core_value_content li h5 {
+  margin-bottom: 15px;
+}
+
+/* ----------方策特色img---------- */
+
+.feature_img ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  max-width: 1330px;
+  margin: 0 auto 100px;
+  color: #fff;
+}
+.feature_img img {
+  width: 100%;
+  height: auto;
+}
+
+/* 圖 */
+
+.service_img {
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(85, 86, 86, 0.5);
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 340px;
+}
+.service_img h5 {
+  margin: 0;
+}
+.service_1 {
+  background-image: url(/image/index_service_1.png);
+}
+.service_2 {
+  background-image: url(/image/index_service_2.png);
+}
+.service_3 {
+  background-image: url(/image/index_service_3.png);
+}
+.service_4 {
+  background-image: url(/image/index_service_4.png);
+}
+.service_5 {
+  background-image: url(/image/index_service_5.png);
+}
+.service_6 {
+  background-image: url(/image/index_service_6.png);
+}
+
+.service_img:hover h5,
+.service_img:hover h6,
+.service_img:hover hr {
+  display: none;
+}
+
+.service_img:hover {
+  background-color: rgba(85, 86, 86, 0); /* 将透明度改为0，完全透明 */
+}
+
+/* ----------客製化行銷---------- */
+.marketing_block {
+  background-image: url(/image/index_marketing_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title_marketing {
+  display: flex;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+  text-align: -webkit-center;
+  max-width: 1000px;
+  padding: 50px;
+  gap: 33px;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.title_marketing h2 {
+  font-weight: 700;
+}
+
+.marketing_block ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 45px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.marketing_block li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.marketing_block li p {
+  width: auto;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 38px 38px 50px;
+  color: #fff;
+}
+
+.marketing_block li h5 {
+  background-image: url(/image/index_marketing_title_bg.png);
+  width: 105px;
+  height: 118px;
+  text-align: center;
+  line-height: 118px;
+  font-weight: 700;
+  color: #3a3a3a;
+  margin-bottom: -30px;
+}
+
+/* ----------媒體數據---------- */
+.media_block {
+  background: #f4f4f4;
+  padding: 30px;
+}
+
+.media_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.media_top p {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 8.55px;
+}
+.media_block ul {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin: 50px;
+}
+.media_block li {
+  text-align: center;
+}
+.media_block h1 {
+  color: #106393;
+  font-size: 80px;
+  font-weight: 700;
+}
+.media_block h5 {
+  font-weight: 700;
+}
+
 

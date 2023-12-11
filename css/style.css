@@ -1,28 +1,43 @@
-body {
-  font-family: 'Noto Sans TC', 'Montserrat', sans-serif, Verdana;
-    letter-spacing: 3px;
+dl,
+ol,
+ul,
+p {
+  margin: 0;
+  padding: 0;
 }
-h1{
+hr {
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.8;
+}
+body {
+  font-family: "Noto Sans TC", "Montserrat", sans-serif, Verdana;
+  letter-spacing: 3px;
+}
+h1 {
   font-weight: bold;
 }
 
-a{
+
+a {
   text-decoration: none;
   color: inherit; /* 可以維持文字原來的顏色，或設定為其他你想要的顏色 */
 }
 
-a:hover {
-  color: #106393;
-}
 /* 字體 */
-
-.title_blue_black{
+.title_blue_black,
+.title_black_white {
   display: flex;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.title_blue_black :nth-child(1){
+.title_blue_black :nth-child(1) {
   color: #106393;
+}
+
+.title_black_white :nth-child(2) {
+  color: #ffffff;
 }
 
 .navbar-nav .nav-item.active > .nav-link,
@@ -40,19 +55,65 @@ a:hover {
   box-shadow: none;
 }
 
-ol, ul {
-  padding: 0
-};
 /* 改nav插件預設字體顏色 */
 
+/*------------ 共同title -------------*/
+.service_text,
+.core_value_text {
+  text-align: center;
+}
+.service_text h2,
+.core_value_text h2 {
+  margin-bottom: 3rem;
+}
+.service_block,
+.core_value_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+/*------------ footer -------------*/
+footer {
+  background-color: #106393;
+  color: #fff;
+}
+
+.footer_logo {
+  /* display: flex;
+  flex-direction: column; */
+}
+.footer_logo p {
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+
+.footer_infomation li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.footer_infomation a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+
+.footer_page{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
 
 /* 寫在手機板 */
 
-.bsnav-mobile .navbar {
+/* .bsnav-mobile .navbar {
   width: 310px;
   padding: 90px 0 15px;
-}
+} */
 
 /* RWD */
 @media only screen and (max-width: 1660px) {
@@ -85,14 +146,13 @@ ol, ul {
     gap: 100px;
   }
 
-  .dropdown .navbar-nav .nav-item{
+  .dropdown .navbar-nav .nav-item {
     gap: 50px;
   }
   .nav-item {
     font-size: 18px;
     font-weight: bold;
   }
-
 }
 
 /* nav手機改漢堡 */
