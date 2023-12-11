@@ -136,22 +136,22 @@
   margin: 0;
 }
 .service_1 {
-  background-image: url(/image/index_service_1.png);
+  background-image: url(../image/index_service_1.png);
 }
 .service_2 {
-  background-image: url(/image/index_service_2.png);
+  background-image: url(../image/index_service_2.png);
 }
 .service_3 {
-  background-image: url(/image/index_service_3.png);
+  background-image: url(../image/index_service_3.png);
 }
 .service_4 {
-  background-image: url(/image/index_service_4.png);
+  background-image: url(../image/index_service_4.png);
 }
 .service_5 {
-  background-image: url(/image/index_service_5.png);
+  background-image: url(../image/index_service_5.png);
 }
 .service_6 {
-  background-image: url(/image/index_service_6.png);
+  background-image: url(../image/index_service_6.png);
 }
 
 .service_img:hover h5,
@@ -161,12 +161,12 @@
 }
 
 .service_img:hover {
-  background-color: rgba(85, 86, 86, 0); /* 将透明度改为0，完全透明 */
+  background-color: rgba(85, 86, 86, 0); /* 透明度 */
 }
 
 /* ----------客製化行銷---------- */
 .marketing_block {
-  background-image: url(/image/index_marketing_bg.png);
+  background-image: url(../image/index_marketing_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -214,7 +214,7 @@
 }
 
 .marketing_block li h5 {
-  background-image: url(/image/index_marketing_title_bg.png);
+  background-image: url(../image/index_marketing_title_bg.png);
   width: 105px;
   height: 118px;
   text-align: center;
