@@ -605,6 +605,17 @@
     width: 680px;
     gap: 50px 20px;
   }
+
+  /* -----------方策特色6大圖片------------ */
+
+  .feature_img ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* -----------客製化行銷------------ */
+  .marketing_block li p {
+    padding: 38px 18px 50px;
+  }
   /* -----------media------------ */
   .media_block {
     padding: 40px;
@@ -663,6 +674,9 @@
   /* -----------服務項目------------ */
   .service_icon li a {
     font-size: 14px;
+  }
+  .service_icon li h5 {
+    font-size: 16px;
   }
   .service_icon ul {
     width: 580px;
@@ -730,6 +744,23 @@
 }
 
 @media only screen and (max-width: 604px) {
+  /* -----------所有區塊的bottom -----------*/
+  /* 輪播圖 */
+  .carousel {
+    margin-bottom: 50px;
+  }
+  /* 服務項目 */
+  .service_icon ul {
+    margin: 60px auto 50px;
+  }
+  /* 核心價值 */
+  .core_value_block {
+    margin-bottom: 50px;
+  }
+  /* 方策特色6大圖 */
+  .feature_img ul {
+    margin: 0 auto 50px;
+  }
   /* -----------導覽列------------ */
   .bsnav-mobile .navbar {
     padding: 100px 0 15px;
@@ -769,7 +800,8 @@
     grid-template-columns: 1fr 1fr;
   }
   .marketing_block ul {
-    gap: 25px 20px;
+    gap: 25px 20px px;
+    padding-top: 0;
   }
 
   /* -----------media------------ */
@@ -785,6 +817,17 @@
     .service_icon ul {
       width: 400px;
       gap: 50px 10px;
+    }
+    /* -----------客製化行銷------------ */
+
+    .marketing_block p {
+      font-size: 13px;
+    }
+    .marketing_block li h5 {
+      font-size: 16px;
+    }
+    .title_marketing {
+      padding-bottom: 10px;
     }
     /* -----------media------------ */
     .media_block h1 {
@@ -802,7 +845,7 @@
   @media only screen and (max-width: 460px) {
     .marketing_block ul {
       padding: 20px;
-  }
+    }
     /* -----------media------------ */
 
     .media_block h1 {
@@ -839,6 +882,20 @@
       transform: translate(-260px, -10px);
     }
   }
+  @media only screen and (max-width: 430px) {
+    /* -----------服務項目------------ */
+    .service_icon ul {
+      width: 350px;
+      gap: 50px 10px;
+    }
+    .feature_img ul {
+      grid-template-columns: 1fr;
+    }
+    .bg_ABOUT {
+      top: 45%;
+    }
+  }
+
   @media only screen and (max-width: 415px) {
     /* -----------核心價值------------ */
     .core_value_content ul {
@@ -853,7 +910,7 @@
       padding-top: 2rem;
     }
     /* -----------media------------ */
-    
+
     .media_top p {
       font-size: 17px;
     }
@@ -864,19 +921,25 @@
       gap: 20px;
     }
   }
-  
+
   @media only screen and (max-width: 390px) {
     .media_block h1 {
       font-size: 32px;
     }
-  } 
+  }
   @media only screen and (max-width: 375px) {
     .service_icon ul {
       width: 340px;
       gap: 20px 0px;
+    }
+    .media_animating .el_global {
+      transform: translate(-320px, 50px);
+    }
   }
-  .media_animating .el_global {
-    transform: translate(-320px, 50px);
+  .media_block ul {
+    margin: 0px;
+  }
+  .media_top p {
+    font-size: 16px;
+  }
 }
-  }
-  }
