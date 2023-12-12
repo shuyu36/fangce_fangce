@@ -74,9 +74,15 @@ a {
 }
 
 /*------------ footer -------------*/
-footer {
+.footer {
   background-color: #106393;
   color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 50px;
 }
 
 .footer_logo {
@@ -131,7 +137,19 @@ footer {
 @media only screen and (max-width: 991px) {
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 802px) {
+
+  /* footer */
+  .footer{
+    padding: 20px;
+    flex-direction: column;
+  }
+  .footer_infomation li {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    justify-content: center;
+}
 }
 
 @media only screen and (max-width: 769px) {
