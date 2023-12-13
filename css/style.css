@@ -189,4 +189,12 @@ a {
     font-size: 0.9rem;
     line-height: 1.2;
   }
+  @media only screen and (max-width: 536px) {
+    p{
+      font-size: 13px;
+    }
+    h5{
+      font-size: 18px;
+    }
+  }
 }
