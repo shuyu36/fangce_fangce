@@ -820,7 +820,7 @@
       content: url('../image/index_banner_mobile__2.jpg'); /* 新的圖片路徑1 */
     }
     .bg_ABOUT {
-      top: 90%;
+      /* top: 90%; */
       width: 50%;
   }
   }
