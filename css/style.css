@@ -15,13 +15,11 @@ body {
   font-family: "Noto Sans TC", "Montserrat", sans-serif, Verdana;
   letter-spacing: 3px;
 }
-h1 {
-  font-weight: bold;
-}
-
-
 a {
   text-decoration: none;
+  color: inherit; /* 可以維持文字原來的顏色，或設定為其他你想要的顏色 */
+}
+a:hover {
   color: inherit; /* 可以維持文字原來的顏色，或設定為其他你想要的顏色 */
 }
 
@@ -33,11 +31,18 @@ a {
 }
 
 .title_blue_black :nth-child(1) {
+  font-weight: bold;
   color: #106393;
 }
-
+.title_blue_black :nth-child(2) {
+  font-weight: bold;
+}
 .title_black_white :nth-child(2) {
+  font-weight: bold;
   color: #ffffff;
+}
+.title_black_white :nth-child(1) {
+  font-weight: bold;
 }
 
 .navbar-nav .nav-item.active > .nav-link,
@@ -71,6 +76,37 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* ----------核心價值---------- */
+
+.core_value_block {
+  background: linear-gradient(
+    5deg,
+    #106393 43.2%,
+    rgba(16, 99, 147, 0.63) 82.22%
+  );
+  padding: 5rem 1rem;
+  margin-bottom: 100px;
+}
+
+.core_value_text h2 {
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+.core_value_content ul {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  color: #ffffff;
+}
+
+.core_value_content li {
+  text-align: center;
+  width: 30%;
+}
+.core_value_content li h5 {
+  margin-bottom: 15px;
 }
 
 /*------------ footer -------------*/
@@ -108,7 +144,7 @@ a {
   margin: 10px;
 }
 
-.footer_page{
+.footer_page {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -131,16 +167,22 @@ a {
 @media only screen and (max-width: 1266px) {
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1070px) {
+  /* -------------導覽列------------ */
+  .nav-item.dropdown > .navbar-nav .nav-item {
+    font-size: 0.7rem;
+  }
+  .navbar-mobile {
+    gap: 60px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
 }
 
 @media only screen and (max-width: 802px) {
-
   /* footer */
-  .footer{
+  .footer {
     padding: 20px;
     flex-direction: column;
   }
@@ -149,13 +191,38 @@ a {
     align-items: center;
     gap: 7px;
     justify-content: center;
-}
+  }
 }
 
 @media only screen and (max-width: 769px) {
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 604px) {
+  /* -----------導覽列------------ */
+  .bsnav-mobile .navbar {
+    padding: 100px 0 15px;
+    transition: 0.4s ease-in-out;
+    transform: translate3d(300px, 0, 0);
+  }
+  .nav-item {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .navbar-mobile {
+    gap: 20px;
+  }
+  /* 核心價值 */
+  .core_value_block {
+    margin-bottom: 50px;
+  }
+  .core_value_content ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .core_value_content li {
+    text-align: center;
+    width: 42%;
+  }
 }
 
 /* 電腦版所有樣式 */
@@ -175,6 +242,9 @@ a {
 
 /* nav手機改漢堡 */
 @media only screen and (max-width: 575px) {
+  .navbar-toggler .navbar-toggler-icon, .navbar-toggler .navbar-toggler-icon::after, .navbar-toggler .navbar-toggler-icon::before {
+    background-color: #106393;
+}
   .bsnav-brand-top {
     padding-top: 10px;
   }
@@ -190,11 +260,21 @@ a {
     line-height: 1.2;
   }
   @media only screen and (max-width: 536px) {
-    p{
+    p {
       font-size: 13px;
     }
-    h5{
+    h5 {
       font-size: 18px;
+    }
+  }
+  @media only screen and (max-width: 415px) {
+    /* -----------核心價值------------ */
+    .core_value_content ul {
+      gap: 60px 20px;
+    }
+    .core_value_content li {
+      text-align: center;
+      width: 44%;
     }
   }
 }

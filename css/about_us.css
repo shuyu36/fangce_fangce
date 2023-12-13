@@ -1,0 +1,164 @@
+/* ---------------標題banner---------------- */
+.top_banner {
+  min-height: 230px;
+  max-height: 140px;
+  height: auto;
+  background: url(../image/about_banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -5;
+}
+.top_banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(16, 99, 147, 0.7);
+  backdrop-filter: blur(0.5px);
+  z-index: -1;
+}
+/* ---------------------歷史沿革-------------------------- */
+.history_block {
+  max-width: 1420px;
+  margin: 0 auto 100px;
+  position: relative;
+}
+.history_text {
+  margin: 60px 20px;
+}
+.bg_COMPANY {
+  top: 180px;
+  right: 0;
+  position: absolute;
+}
+/* ---------------------專業團隊-------------------------- */
+
+.team_block {
+  max-width: 1520px;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.team_img {
+  width: 60%;
+}
+.team_text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 40%;
+}
+.team_text span {
+  display: flex;
+}
+.team_text span :nth-child(1) {
+  color: #106393;
+}
+.team_text p {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.team_countent {
+  margin-bottom: 30px;
+}
+
+.btn {
+  width: 165px;
+  height: 50px;
+  line-height: 34px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #106393;
+  font-size: 20px;
+  color: #fff;
+  /* transition: property duration timing-function delay; */
+  transition: background-color 1.5s;
+}
+
+.btn:hover {
+  background-color: #ffd645;
+  color: #000000;
+}
+
+/* ---------------------客戶好評-------------------------- */
+
+.customer_block {
+  background: linear-gradient(
+    106deg,
+    rgba(16, 99, 147, 0.8) 14.59%,
+    rgba(186, 186, 186, 0.8) 44.28%,
+    rgba(16, 99, 147, 0.8) 100.01%
+  );
+  padding: 5rem 1rem;
+  margin-bottom: 100px;
+}
+
+.customer_countent {
+  max-width: 1920px;
+  margin: auto;
+}
+.customer_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.customer_text h2 {
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+
+/* swiper */
+.swiper-top {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.swiper {
+  width: calc(70% - 100px);
+  margin: auto;
+  height: auto;
+}
+
+.swiper-slide {
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.swiper-pagination.swiper-pagination-1 {
+  bottom: -2rem;
+}
+
+/* -----------------------合作案例------------------------ */
+.case_block {
+  overflow: hidden;
+}
+
+.case_slide {
+  width: auto;
+  font-size: 24px;
+  background-color: #000;
+  color: white;
+}
+
+.swiper_wrapper {
+  transition-timing-function: linear;
+}
+
+.case_img img{
+    width: 20px;
+}

@@ -1,4 +1,7 @@
 /* 輪播 */
+h1 {
+  font-weight: bold;
+}
 .carousel {
   margin-bottom: 100px;
 }
@@ -66,37 +69,6 @@
 
 .service_icon li a:hover {
   color: #106393;
-}
-
-/* ----------核心價值---------- */
-
-.core_value_block {
-  background: linear-gradient(
-    5deg,
-    #106393 43.2%,
-    rgba(16, 99, 147, 0.63) 82.22%
-  );
-  padding: 5rem 1rem;
-    margin-bottom: 100px;
-}
-
-.core_value_text h2 {
-  margin-bottom: 3rem;
-  color: #ffffff;
-}
-.core_value_content ul {
-  display: flex;
-  gap: 50px;
-  align-items: flex-start;
-  color: #ffffff;
-}
-
-.core_value_content li {
-  text-align: center;
-  width: 30%;
-}
-.core_value_content li h5 {
-  margin-bottom: 15px;
 }
 
 /* ----------方策特色img---------- */
@@ -236,7 +208,7 @@
   max-width: 1320px;
   margin: auto;
 }
-.media_top p {
+.media_top h1 {
   text-align: center;
   font-size: 45px;
   font-weight: 700;
@@ -252,7 +224,7 @@
 .media_block li {
   text-align: center;
 }
-.media_block h1 {
+.media_block p {
   color: #106393;
   font-size: 80px;
   font-weight: 700;
@@ -357,10 +329,10 @@
 
 @media only screen and (max-width: 1366px) {
   /* media */
-  .media_top p {
+  .media_top h1 {
     font-size: 35px;
   }
-  .media_block h1 {
+  .media_block p {
     font-size: 65px;
   }
 }
@@ -419,10 +391,10 @@
     height: auto;
   }
   /* -----------media------------ */
-  .media_block h1 {
+  .media_block p {
     font-size: 50px;
   }
-  .media_top p {
+  .media_top h1 {
     font-size: 35px;
   }
   /* 動畫 */
@@ -471,20 +443,14 @@
 }
 
 @media only screen and (max-width: 1070px) {
-  /* -------------導覽列------------ */
-  .nav-item.dropdown > .navbar-nav .nav-item {
-    font-size: 0.7rem;
-  }
-  .navbar-mobile {
-    gap: 60px;
-  }
+
   /* -----------服務項目------------ */
   .service_icon ul {
     width: 950px;
   }
 
   /* -----------media------------ */
-  .media_top p {
+  .media_top h1 {
     font-size: 30px;
   }
   .media_block h5 {
@@ -498,13 +464,13 @@
   /* -----------media------------ */
   /* 動畫 */
 
-  .media_block h1 {
+  .media_block p {
     font-size: 45px;
   }
   .media_block h5 {
     font-size: 16px;
   }
-  .media_top p {
+  .media_top h1 {
     font-size: 25px;
   }
   .el_rwd img {
@@ -638,10 +604,10 @@
     width: 30px;
     height: auto;
   }
-  .media_top p {
+  .media_top h1 {
     font-size: 21px;
   }
-  .media_block h1 {
+  .media_block p {
     font-size: 40px;
   }
   .media_animating .el_global {
@@ -701,14 +667,14 @@
   .media_block ul {
     gap: 40px;
   }
-  .media_top p {
+  .media_top h1 {
     font-size: 21px;
     padding-bottom: 200px;
   }
   .media_block h5 {
     font-size: 14px;
   }
-  .media_block h1 {
+  .media_block p {
     font-size: 35px;
   }
 
@@ -753,27 +719,12 @@
   .service_icon ul {
     margin: 60px auto 50px;
   }
-  /* 核心價值 */
-  .core_value_block {
-    margin-bottom: 50px;
-  }
+
   /* 方策特色6大圖 */
   .feature_img ul {
     margin: 0 auto 50px;
   }
-  /* -----------導覽列------------ */
-  .bsnav-mobile .navbar {
-    padding: 100px 0 15px;
-    transition: 0.4s ease-in-out;
-    transform: translate3d(300px, 0, 0);
-  }
-  .nav-item {
-    font-size: 13px;
-    font-weight: bold;
-  }
-  .navbar-mobile {
-    gap: 20px;
-  }
+  
 
   /* -----------服務項目------------ */
   .service_icon ul {
@@ -783,15 +734,7 @@
   .service_icon ul {
     grid-template-columns: 1fr 1fr;
   }
-  /* -----------核心價值------------ */
-  .core_value_content ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .core_value_content li {
-    text-align: center;
-    width: 42%;
-  }
+
   /* -----------方策特色6大圖片------------ */
   .feature_img ul {
     grid-template-columns: 1fr 1fr;
@@ -805,7 +748,7 @@
   }
 
   /* -----------media------------ */
-  .media_block h1 {
+  .media_block p {
     font-size: 35px;
   }
   .media_block ul {
@@ -842,7 +785,7 @@
       padding-bottom: 10px;
     }
     /* -----------media------------ */
-    .media_block h1 {
+    .media_block p {
       font-size: 50px;
     }
     .media_block ul {
@@ -860,10 +803,10 @@
     }
     /* -----------media------------ */
 
-    /* .media_block h1 {
+    /* .media_block p {
       font-size: 40px;
     } */
-    .media_top p {
+    .media_top h1 {
       font-size: 20px;
       padding-bottom: 200px;
     }
@@ -906,20 +849,12 @@
   }
 
   @media only screen and (max-width: 415px) {
-    /* -----------核心價值------------ */
-    .core_value_content ul {
-      gap: 60px 20px;
-  }
-    .core_value_content li {
-      text-align: center;
-      width: 44%;
-    }
     /* -----------media------------ */
 
-    .media_top p {
+    .media_top h1 {
       font-size: 17px;
     }
-    /* .media_block h1 {
+    /* .media_block p {
       font-size: 35px;
     } */
     .feature_img ul {
@@ -928,7 +863,7 @@
   }
 
   @media only screen and (max-width: 390px) {
-    /* .media_block h1 {
+    /* .media_block p {
       font-size: 32px;
     } */
   }
@@ -944,7 +879,7 @@
   .media_block ul {
     margin: 0px;
   }
-  .media_top p {
+  .media_top h1 {
     font-size: 16px;
   }
 }
