@@ -178,16 +178,16 @@
     font-size: 18px;
   }
   .info_block ul {
-    padding: 44px 58px;
+    padding: 44px 42px;
     margin-bottom: 90px;
     border-radius: 50px;
   }
   .top_text {
     padding: 50px 23px;
-}
+  }
   @media only screen and (max-width: 440px) {
     .info_text p:nth-child(2) {
-      font-size: 13px;
+      font-size: 18px;
       word-break: break-all;
     }
     .top_text p {
