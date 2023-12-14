@@ -59,8 +59,32 @@ a:hover {
 .navbar-toggler:focus {
   box-shadow: none;
 }
+.navbar-mobile {
+  gap: 100px;
+}
+
+.dropdown .navbar-nav .nav-item {
+  gap: 50px;
+}
+.nav-item {
+  font-size: 18px;
+  font-weight: bold;
+}
 
 /* 改nav插件預設字體顏色 */
+
+/*------------ 標題banner -------------*/
+.top_banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(16, 99, 147, 0.7);
+  backdrop-filter: blur(0.5px);
+  z-index: -1;
+}
 
 /*------------ 共同title -------------*/
 .service_text,
@@ -177,7 +201,14 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 990px) {
+  .nav-item {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .navbar-mobile {
+    gap: 70px;
+  }
 }
 
 @media only screen and (max-width: 802px) {
@@ -195,6 +226,9 @@ a:hover {
 }
 
 @media only screen and (max-width: 769px) {
+  .navbar-mobile {
+    gap: 40px;
+}
 }
 
 @media only screen and (max-width: 604px) {
@@ -225,26 +259,15 @@ a:hover {
   }
 }
 
-/* 電腦版所有樣式 */
-@media (min-width: 576px) {
-  .navbar-mobile {
-    gap: 100px;
-  }
 
-  .dropdown .navbar-nav .nav-item {
-    gap: 50px;
-  }
-  .nav-item {
-    font-size: 18px;
-    font-weight: bold;
-  }
-}
 
 /* nav手機改漢堡 */
 @media only screen and (max-width: 575px) {
-  .navbar-toggler .navbar-toggler-icon, .navbar-toggler .navbar-toggler-icon::after, .navbar-toggler .navbar-toggler-icon::before {
+  .navbar-toggler .navbar-toggler-icon,
+  .navbar-toggler .navbar-toggler-icon::after,
+  .navbar-toggler .navbar-toggler-icon::before {
     background-color: #106393;
-}
+  }
   .bsnav-brand-top {
     padding-top: 10px;
   }

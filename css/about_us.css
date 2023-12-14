@@ -13,17 +13,6 @@
   position: relative;
   z-index: -5;
 }
-.top_banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(16, 99, 147, 0.7);
-  backdrop-filter: blur(0.5px);
-  z-index: -1;
-}
 /* ---------------------歷史沿革-------------------------- */
 .history_block {
   max-width: 1420px;
@@ -100,7 +89,7 @@
     rgba(16, 99, 147, 0.8) 100.01%
   );
   padding: 5rem 1rem;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .customer_countent {
@@ -134,8 +123,6 @@
 }
 
 .swiper-slide img {
-  width: 100%;
-  height: auto;
   object-fit: cover;
 }
 
@@ -146,9 +133,30 @@
 /* -----------------------合作案例------------------------ */
 .case_block {
   overflow: hidden;
+  max-width: 1920px;
 }
 
-.case_slide {
+.carousel-inner{
+  padding: 50px;
+}
+
+.case_carousel{
+  background-color: #444444;
+  margin: 100px auto 0px;
+  max-width: 1520px;
+
+}
+
+.carousel_img{
+  text-align: center;
+  display: grid;
+  max-width: 80%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+/* .case_slide {
   width: auto;
   font-size: 24px;
   background-color: #000;
@@ -162,3 +170,57 @@
 .case_img img{
     width: 20px;
 }
+
+.GeneratedMarquee img{
+  padding:50px;
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+.marquee-content img {
+  padding-right: 50px; 
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(-10%);
+  }
+  10% {
+    transform: translateX(-15%);
+  }
+  20% {
+    transform: translateX(-20%);
+  }
+  30% {
+    transform: translateX(-25%);
+  }
+  40% {
+    transform: translateX(-30%);
+  }
+  50% {
+    transform: translateX(-35%);
+  }
+  60% {
+    transform: translateX(-30%);
+  }
+  70% {
+    transform: translateX(-25%);
+  }
+  80% {
+    transform: translateX(-20%);
+  }
+  90% {
+    transform: translateX(-15%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+} */

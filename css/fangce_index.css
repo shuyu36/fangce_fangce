@@ -518,10 +518,7 @@ h1 {
 }
 
 @media only screen and (max-width: 900px) {
-  .nav-item {
-    font-size: 15px;
-    font-weight: bold;
-  }
+
   /* -----------服務項目------------ */
 
   .service_icon ul {
