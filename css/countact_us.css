@@ -169,6 +169,7 @@
   .info_block ul {
     padding: 44px 58px;
     margin-bottom: 90px;
+    gap: 20px;
   }
   .top_text {
     padding: 23px;
