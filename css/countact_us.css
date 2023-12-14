@@ -154,6 +154,10 @@
 }
 
 @media only screen and (max-width: 670px) {
+  /* ------------banner-------------- */
+  .top_banner {
+    max-height: 140px;
+  }
   .title_block img {
     width: 70%;
     margin-top: -25px;
