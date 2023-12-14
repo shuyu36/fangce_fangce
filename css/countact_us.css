@@ -183,8 +183,8 @@
     border-radius: 50px;
   }
   .top_text {
-    padding: 23px;
-  }
+    padding: 50px 23px;
+}
   @media only screen and (max-width: 440px) {
     .info_text p:nth-child(2) {
       font-size: 13px;
