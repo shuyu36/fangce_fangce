@@ -14,6 +14,7 @@ hr {
 body {
   font-family: "Noto Sans TC", "Montserrat", sans-serif, Verdana;
   letter-spacing: 3px;
+  color: black;
 }
 a {
   text-decoration: none;
