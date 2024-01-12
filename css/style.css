@@ -24,6 +24,12 @@ a:hover {
   color: inherit; /* 可以維持文字原來的顏色，或設定為其他你想要的顏色 */
 }
 
+section{
+  margin: 50px auto;
+}
+section {
+  padding: 0 20px;
+}
 /* 字體 */
 .title_blue_black,
 .title_black_white {
@@ -31,6 +37,9 @@ a:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.title_blue_black {
+  font-size: 40px;
+}
 .title_blue_black :nth-child(1) {
   font-weight: bold;
   color: #106393;
@@ -38,6 +47,11 @@ a:hover {
 .title_blue_black :nth-child(2) {
   font-weight: bold;
 }
+
+.title_black_white {
+  font-size: 40px;
+}
+
 .title_black_white :nth-child(2) {
   font-weight: bold;
   color: #ffffff;
@@ -75,6 +89,10 @@ a:hover {
 /* 改nav插件預設字體顏色 */
 
 /*------------ 標題banner -------------*/
+
+.top_banner{
+height: 230px;
+}
 .top_banner::before {
   content: "";
   position: absolute;
@@ -112,7 +130,6 @@ a:hover {
     rgba(16, 99, 147, 0.63) 82.22%
   );
   padding: 5rem 1rem;
-  margin-bottom: 100px;
 }
 
 .core_value_text h2 {
@@ -128,7 +145,7 @@ a:hover {
 
 .core_value_content li {
   text-align: center;
-  width: 30%;
+  width: 40%;
 }
 .core_value_content li h5 {
   margin-bottom: 15px;
@@ -183,8 +200,6 @@ a:hover {
 } */
 
 /* RWD */
-@media only screen and (max-width: 1660px) {
-}
 
 @media only screen and (max-width: 1366px) {
 }
@@ -194,12 +209,12 @@ a:hover {
 
 @media only screen and (max-width: 1070px) {
   /* -------------導覽列------------ */
-  .nav-item.dropdown > .navbar-nav .nav-item {
+  /* .nav-item.dropdown > .navbar-nav .nav-item {
     font-size: 0.7rem;
-  }
-  .navbar-mobile {
+  } */
+  /* .navbar-mobile {
     gap: 60px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 990px) {
@@ -247,17 +262,17 @@ a:hover {
     gap: 20px;
   }
   /* 核心價值 */
-  .core_value_block {
+  /* .core_value_block {
     margin-bottom: 50px;
-  }
+  } */
   .core_value_content ul {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .core_value_content li {
+  /* .core_value_content li {
     text-align: center;
     width: 42%;
-  }
+  } */
 }
 
 /* nav手機改漢堡 */
@@ -281,7 +296,13 @@ a:hover {
     font-size: 0.9rem;
     line-height: 1.2;
   }
+  .top_banner {
+    height: 140px;
+  }
+
+}
   @media only screen and (max-width: 536px) {
+
     p {
       font-size: 13px;
     }
@@ -291,12 +312,12 @@ a:hover {
   }
   @media only screen and (max-width: 415px) {
     /* -----------核心價值------------ */
-    .core_value_content ul {
+    /* .core_value_content ul {
       gap: 60px 20px;
     }
     .core_value_content li {
       text-align: center;
       width: 44%;
-    }
+    } */
   }
-}
+

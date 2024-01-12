@@ -1,8 +1,6 @@
 /* ---------------標題banner---------------- */
 .top_banner {
-  min-height: 230px;
-  max-height: 140px;
-  height: auto;
+height: 230px;
   background: url(../image/countact_banner.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -155,9 +153,7 @@
 
 @media only screen and (max-width: 670px) {
   /* ------------banner-------------- */
-  .top_banner {
-    min-height: 140px;
-  }
+
   .title_block img {
     width: 70%;
     margin-top: -25px;
@@ -169,6 +165,12 @@
     padding: 44px 58px;
     margin-bottom: 90px;
   }
+}
+
+@media only screen and (max-width: 575px) {
+.top_banner{
+  height: 180px;
+}
 }
 @media only screen and (max-width: 530px) {
   .info_block {

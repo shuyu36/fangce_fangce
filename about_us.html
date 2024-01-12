@@ -44,7 +44,10 @@
             height="auto"
           />
         </a>
-        <button class="navbar-toggler toggler-spring">
+        <button
+          class="navbar-toggler toggler-spring"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-xs-center">
@@ -110,7 +113,7 @@
       </div>
     </header>
     <!------------banner--------------->
-    <section class="top_banner">
+    <article class="top_banner">
       <div
         class="banner_title"
         style="
@@ -125,7 +128,7 @@
           <p style="color: #fff; font-weight: 100; font-size: 25px">我們</p>
         </div>
       </div>
-    </section>
+    </article>
 
     <!-----------------麵包屑-------------------->
     <div
@@ -152,12 +155,21 @@
         <h2>服務項目</h2>
       </div>
       <div style="display: flex; justify-content: center">
-        <img
-          src="./image/history_desktop.png"
-          alt="創立沿革圖"
-          width="90%"
-          height="auto"
-        />
+        <picture style="display: flex; justify-content: center">
+          <!-- 適用於小於 575px 寬度的視窗 -->
+          <source
+            media="(max-width: 575px)"
+            srcset="./image/history_mobile.png"
+          />
+
+          <!-- 預設圖片，適用於大於 575px 寬度的視窗 -->
+          <img
+            src="./image/history_desktop.png"
+            alt="創立沿革圖"
+            width="90%"
+            height="auto"
+          />
+        </picture>
         <img
           src="./image/COMPANY.png"
           alt="COMPANY背景圖"
@@ -340,82 +352,7 @@
     </section>
 
     <!-----------------------合作案例--------------------------- -->
-    <!-- <section class="case_block">
-      <div class="marquee-container">
-        <div class="marquee-content">
-          <div style="margin-bottom: 50px;">
-            <img src="./image/logo1.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo2.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo3.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo4.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo6.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo7.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo8.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo9.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo10.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo11.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo12.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo1.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo2.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo3.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo4.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo6.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo7.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo8.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo9.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo10.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo11.png" alt="" width="auto"
-            height="100%"/>
-            <img src="./image/logo12.png" alt="" width="auto"
-            height="100%"/>
-          </div>
-          <div>
-            <img src="./image/logo13.png" alt="" />
-            <img src="./image/logo14.png" alt="" />
-            <img src="./image/logo15.png" alt="" />
-            <img src="./image/logo16.png" alt="" />
-            <img src="./image/logo17.png" alt="" />
-            <img src="./image/logo18.png" alt="" />
-            <img src="./image/logo19.png" alt="" />
-            <img src="./image/logo21.png" alt="" />
-            <img src="./image/logo22.png" alt="" />
-            <img src="./image/logo23.png" alt="" />
-            <img src="./image/logo13.png" alt="" />
-            <img src="./image/logo14.png" alt="" />
-            <img src="./image/logo15.png" alt="" />
-            <img src="./image/logo16.png" alt="" />
-            <img src="./image/logo17.png" alt="" />
-            <img src="./image/logo18.png" alt="" />
-            <img src="./image/logo19.png" alt="" />
-            <img src="./image/logo21.png" alt="" />
-            <img src="./image/logo22.png" alt="" />
-            <img src="./image/logo23.png" alt="" />
-          </div>
-        </div>
-      </div>
-      <img src="./image/CASE.png" alt="" width="20%" height="auto">
 
-    </section> -->
     <section class="case_block">
       <div
         id="carouselExampleControls"

@@ -32,9 +32,17 @@
     <header>
       <div class="navbar navbar-expand-sm bsnav bsnav-brand-top">
         <a class="navbar-brand" href="#">
-          <img src="./image/fangce_logo_yellow.png" alt="方策logo" width="auto" height="auto"/>
+          <img
+            src="./image/fangce_logo_yellow.png"
+            alt="方策logo"
+            width="auto"
+            height="auto"
+          />
         </a>
-        <button class="navbar-toggler toggler-spring">
+        <button
+          class="navbar-toggler toggler-spring"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-xs-center">
@@ -58,27 +66,39 @@
                   <a class="nav-link" href="./google.html">GOOGLE ADS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./social_advertising.html">社群廣告</a>
+                  <a class="nav-link" href="./social_advertising.html"
+                    >社群廣告</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./youtube.html">YOUTUBE-全球最大的影音平台</a>
+                  <a class="nav-link" href="./youtube.html"
+                    >YOUTUBE-全球最大的影音平台</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./kol_marketing.html">KOL網紅行銷</a>
+                  <a class="nav-link" href="./kol_marketing.html"
+                    >KOL網紅行銷</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./360_photog.html">360環景攝影</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./commercial_photog.html">商家攝影</a>
+                  <a class="nav-link" href="./commercial_photog.html"
+                    >商家攝影</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./google_pay.html">商家預約金流系統</a>
+                  <a class="nav-link" href="./google_pay.html"
+                    >商家預約金流系統</a
+                  >
                 </li>
               </ul>
             </li>
 
-            <li class="nav-item"><a class="nav-link" href="./countact_us.html">聯絡我們</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="./countact_us.html">聯絡我們</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -88,24 +108,17 @@
       </div>
     </header>
 
-
-
-
-
-
-
-
-<!-----------------------footer--------------------------- -->
+    <!-----------------------footer--------------------------- -->
 
     <footer>
       <div class="footer">
         <div class="footer_logo">
-          <a href="./index.html" >
+          <a href="./index.html">
             <img
-            src="./image/fangce_logo_white.png"
-            alt="方策logo"
-            width="267px"
-            height="auto"
+              src="./image/fangce_logo_white.png"
+              alt="方策logo"
+              width="267px"
+              height="auto"
             />
           </a>
           <p>Copyright© 2023 方策數位有限公司 All Rights Reserved.</p>

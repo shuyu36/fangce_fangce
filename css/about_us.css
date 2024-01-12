@@ -1,8 +1,6 @@
 /* ---------------標題banner---------------- */
 .top_banner {
-  min-height: 230px;
-  max-height: 140px;
-  height: auto;
+  height: 230px;
   background: url(../image/about_banner.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -89,7 +87,6 @@
     rgba(16, 99, 147, 0.8) 100.01%
   );
   padding: 5rem 1rem;
-  /* margin-bottom: 100px; */
 }
 
 .customer_countent {
@@ -132,103 +129,67 @@
 
 /* -----------------------合作案例------------------------ */
 .case_block {
-  overflow: hidden;
   max-width: 1920px;
 }
 
-.carousel-inner{
-  padding: 50px;
-}
-
-.case_carousel{
-  background-color: #444444;
-  margin: 100px auto 0px;
-  max-width: 1520px;
-
-}
-
-.carousel_img{
-  text-align: center;
-  display: grid;
-  max-width: 80%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 30px;
+.case_carousel {
+  max-width: 1240px;
   margin: 0 auto;
 }
 
-/* .case_slide {
-  width: auto;
-  font-size: 24px;
-  background-color: #000;
-  color: white;
+.carousel_img {
+  text-align: center;
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  margin: 0 auto;
 }
 
-.swiper_wrapper {
-  transition-timing-function: linear;
+
+@media only screen and (max-width: 1200px) {
+  .swiper {
+    width: calc(90% - 100px);
+    margin: auto;
+    height: auto;
+}
+}
+@media only screen and (max-width: 767px) {
+
+/* ---------------------團隊介紹-------------------------- */
+.team_img {
+    width: 100%;
+  }
+  .team_block {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .team_text {
+    width: 100%;
+  }
 }
 
-.case_img img{
-    width: 20px;
-}
-
-.GeneratedMarquee img{
-  padding:50px;
-}
-
-.marquee-container {
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.marquee-content {
-  display: inline-block;
-  animation: marquee-scroll 25s linear infinite;
-}
-
-.marquee-content img {
-  padding-right: 50px; 
-}
-
-@keyframes marquee-scroll {
-  0% {
-    transform: translateX(-10%);
-  }
-  10% {
-    transform: translateX(-15%);
-  }
-  20% {
-    transform: translateX(-20%);
-  }
-  30% {
-    transform: translateX(-25%);
-  }
-  40% {
-    transform: translateX(-30%);
-  }
-  50% {
-    transform: translateX(-35%);
-  }
-  60% {
-    transform: translateX(-30%);
-  }
-  70% {
-    transform: translateX(-25%);
-  }
-  80% {
-    transform: translateX(-20%);
-  }
-  90% {
-    transform: translateX(-15%);
-  }
-  100% {
-    transform: translateX(-10%);
-  }
-} */
-
-
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 575px) {
   /* ------------banner-------------- */
   .top_banner {
-    min-height: 140px;
+    height: 180px;
   }
+/* ---------------------客戶好評-------------------------- */
+
+.title_black_white h1{
+  font-size: 22px;
+}
+
+.swiper {
+  width: calc(100% - 0px);
+  margin: auto;
+  height: auto;
+}
+
+/* ---------------------合作案例-------------------------- */
+
+.carousel_img {
+  gap: 10px;
+
+}
 }

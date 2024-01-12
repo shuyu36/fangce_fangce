@@ -19,14 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
       clickable: true,
     },
   });
-  const swiper = new Swiper(".case_swiper", {
-    slidesPerView: "auto",
-    allowTouchMove: false,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-    },
-    loop: true,
-    speed: 30000,
-  });
+  // const swiper = new Swiper(".case_swiper", {
+  //   slidesPerView: "auto",
+  //   allowTouchMove: false,
+  //   autoplay: {
+  //     delay: 0,
+  //     disableOnInteraction: false,
+  //   },
+  //   loop: true,
+  //   speed: 30000,
+  // });
 });
