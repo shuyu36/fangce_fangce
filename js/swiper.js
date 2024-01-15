@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   var customerSwiper = new Swiper(".customer_swiper", {
     effect: "coverflow",
-    slidesPerView: 3,
+    slidesPerView: 2,
     loop: true,
     centeredSlides: true,
     coverflowEffect: {
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     breakpoints: {
       // 在視窗寬度小於等於 575px 時，slidesPerView 設置為 2
       575: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       // 在視窗寬度大於 575px 時，slidesPerView 設置為 4
       576: {
