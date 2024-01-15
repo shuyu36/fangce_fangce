@@ -104,22 +104,22 @@ h1 {
   margin: 0;
 }
 .service_1 {
-  background-image: url(../image/index_service_1.png);
+  background-image: url(../image/index_service_1.webp);
 }
 .service_2 {
-  background-image: url(../image/index_service_2.png);
+  background-image: url(../image/index_service_2.webp);
 }
 .service_3 {
-  background-image: url(../image/index_service_3.png);
+  background-image: url(../image/index_service_3.webp);
 }
 .service_4 {
-  background-image: url(../image/index_service_4.png);
+  background-image: url(../image/index_service_4.webp);
 }
 .service_5 {
-  background-image: url(../image/index_service_5.png);
+  background-image: url(../image/index_service_5.webp);
 }
 .service_6 {
-  background-image: url(../image/index_service_6.png);
+  background-image: url(../image/index_service_6.webp);
 }
 
 .service_img:hover h5,
@@ -134,7 +134,7 @@ h1 {
 
 /* ----------客製化行銷---------- */
 .marketing_block {
-  background-image: url(../image/index_marketing_bg.png);
+  background-image: url(../image/index_marketing_bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 0;
@@ -183,7 +183,7 @@ h1 {
 }
 
 .marketing_block li h5 {
-  background-image: url(../image/index_marketing_title_bg.png);
+  background-image: url(../image/index_marketing_title_bg.webp);
   width: 105px;
   height: 118px;
   text-align: center;
@@ -719,10 +719,10 @@ h1 {
     margin: 0 auto;
   }
   .carousel_1 img {
-    content: url("../image/index_banner_mobile__1.jpg");
+    content: url("../image/index_banner_mobile__1.webp");
   }
   .carousel_2 img {
-    content: url("../image/index_banner_mobile__2.jpg");
+    content: url("../image/index_banner_mobile__2.webp");
   }
   /* -----------背景圖------------ */
   /* .bg_ABOUT {
@@ -752,7 +752,7 @@ h1 {
     flex-wrap: wrap;
   }
   .marketing_block {
-    background-image: url(../image/index_marketing_bg_mobile.png);
+    background-image: url(../image/index_marketing_bg_mobile.webp);
   }
 }
 @media only screen and (max-width: 460px) {

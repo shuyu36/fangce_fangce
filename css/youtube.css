@@ -1,0 +1,91 @@
+/* ---------------標題banner---------------- */
+.top_banner {
+  height: 230px;
+  background: url(../image/youtube_banner.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 52%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -5;
+}
+
+/* ---------------介紹區塊---------------- */
+
+.youtube_introduce_block {
+  display: flex;
+  max-width: 1520px;
+  margin: auto;
+  align-items: center;
+}
+
+.youtube_introduce_img {
+  width: 100%;
+}
+
+.youtube_introduce_text {
+  width: 100%;
+  font-size: 18px;
+}
+
+.youtube_introduce_text :nth-child(3),
+.youtube_introduce_text :nth-child(6) {
+  color: #106393;
+  font-weight: bold;
+}
+
+/* ---------------範例區塊---------------- */
+.youtube_example_block {
+  max-width: 1420px;
+  margin-bottom: 100px;
+}
+
+
+.youtube_example_block ul {
+  display: flex;
+}
+.youtube_example_block li {
+  width: 100%;
+  text-align: center;
+}
+
+.youtube_example_block img {
+  margin-bottom: 20px;
+}
+.youtube_example_block li span {
+  background-color: #ffe073;
+  color: #3c2415;
+  padding: 3px 20px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .youtube_example_block li span {
+    padding: 2px 20px;
+    font-size: 18px;
+  }
+  .youtube_introduce_text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+    .youtube_introduce_block {
+        flex-direction: column;
+    }
+  .youtube_introduce_text {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .top_banner {
+    height: 180px;
+  }
+
+  .youtube_example_block li span {
+    padding: 2px 14px;
+    font-size: 13px;
+  }
+}

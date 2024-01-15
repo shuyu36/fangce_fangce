@@ -1,7 +1,7 @@
 /* ---------------標題banner---------------- */
 .top_banner {
   height: 230px;
-  background: url(../image/rwd_banner.png);
+  background: url(../image/rwd_banner.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 52%;
@@ -10,31 +10,6 @@
   align-items: center;
   position: relative;
   z-index: -5;
-}
-
-/* ---------------主題標題---------------- */
-.rwd_top_block {
-  max-width: 1420px;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-.rwd_top_block p {
-  display: inline-flex;
-  color: #106393;
-
-  text-align: center;
-  font-size: 18px;
-  font-weight: 700;
-
-  padding: 0px 15px;
-  /* gap: 10px; */
-
-  border-right: 5px solid #106393;
-  border-left: 5px solid #106393;
 }
 
 /* ---------------主內容一---------------- */
@@ -48,21 +23,6 @@
   width: 100%;
   max-width: 1240px;
   margin: auto;
-}
-
-.rwd_first_title {
-  width: 470px;
-  /* height: 49px; */
-  flex-shrink: 0;
-  background: #106393;
-  color: #fff;
-  font-size: 25px;
-  font-weight: 400;
-  /* line-height: 49px; */
-  text-align: right;
-  padding: 5px;
-  margin-left: -20px;
-  margin-bottom: 50px;
 }
 
 .rwd1_content_text {
@@ -124,15 +84,10 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .rwd_first_title {
-    width: 380px;
-  }
   .rwd_second_title {
     font-size: 20px;
   }
-  .rwd_first_title {
-    font-size: 20px;
-  }
+
   .rwd1_content_text {
     font-size: 16px;
   }
@@ -160,13 +115,7 @@
   .top_banner {
     height: 180px;
   }
-  .rwd_first_title p {
-    font-size: 16px;
-  }
   .rwd_second_title p {
     font-size: 16px;
-  }
-  .rwd_first_title {
-    width: 320px;
   }
 }

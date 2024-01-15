@@ -1,7 +1,7 @@
 /* ---------------標題banner---------------- */
 .top_banner {
   height: 230px;
-  background: url(../image/about_banner.png);
+  background: url(../image/about_banner.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 35%;
@@ -190,6 +190,6 @@
 
 .carousel_img {
   gap: 10px;
-
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 }

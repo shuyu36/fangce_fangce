@@ -1,0 +1,61 @@
+/* ---------------標題banner---------------- */
+.top_banner {
+  height: 230px;
+  background: url(../image/360_photography_banner.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 52%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -5;
+}
+
+/* ---------------主內容---------------- */
+.photography_content {
+  max-width: 1728px;
+  margin: auto;
+}
+
+.photography_content li {
+  width: 100%;
+  text-align: center;
+}
+
+.photography_content li span {
+  background-color: #ffe073;
+  color: #3c2415;
+  padding: 3px 20px;
+  font-size: 20px;
+}
+
+.photography_content li p {
+  padding: 20px;
+}
+
+.photography_content ul {
+  display: flex;
+}
+@media only screen and (max-width: 1024px) {
+  .photography_content li span {
+    padding: 2px 20px;
+    font-size: 18px;
+  }
+  .photography_content li p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .photography_content ul {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .top_banner {
+    height: 180px;
+  }
+  .photography_content li p {
+    font-size: 13px;
+  }
+}
