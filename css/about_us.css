@@ -133,7 +133,7 @@
 }
 
 .case_carousel {
-  max-width: 1240px;
+  max-width: 1620px;
   margin: 0 auto;
 }
 
@@ -141,7 +141,7 @@
   text-align: center;
   display: grid;
   max-width: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 15px;
   margin: 0 auto;
 }
