@@ -1,0 +1,157 @@
+/* ---------------標題banner---------------- */
+.top_banner {
+  height: 230px;
+  background: url(../image/commercial_photog_banner.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -5;
+}
+
+/* ---------------主題內容---------------- */
+
+.cmp_first_block {
+  max-width: 1920px;
+  margin-bottom: 0;
+}
+
+.cmp_title {
+  flex-shrink: 0;
+  background: #106393;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: right;
+  display: inline-block;
+  padding: 5px 20px;
+  margin-left: -20px;
+  /* margin-bottom: 50px; */
+}
+
+.price_block {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 30px 10px;
+}
+
+.price_gery {
+  background-color: #ebebeb;
+  color: #000;
+}
+
+.price_blue {
+  background: rgba(16, 99, 147, 0.8);
+  color: #fff;
+}
+
+.price_text {
+  padding: 30px;
+  line-height: 2;
+}
+
+.bg_COMMERCIAL {
+  position: absolute;
+  bottom: -130px;
+  width: 40%;
+  left: -120px;
+  z-index: -1;
+}
+
+/* ---------------圖片區塊---------------- */
+
+.cmp_img_title {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.cmp_img {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-auto-flow: dense;
+  margin-top: 10px;
+}
+
+.cmp_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 3px 3px 3px rgb(122, 122, 122);
+}
+
+.height {
+  grid-row: span 2;
+}
+
+.width {
+  grid-column: span 2;
+}
+
+.big {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.cmp_img {
+  display: none;
+}
+
+.cmp_img.show {
+  display: grid;
+}
+/* 選中時的文字顏色 */
+.cmp_img_title li.selected {
+  color: #106393;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1400px) {
+  .bg_COMMERCIAL {
+    bottom: -100px;
+    width: 45%;
+    left: 10px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .cmp_img {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .bg_COMMERCIAL {
+    width: 50%;
+    bottom: -130px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .price_block {
+    gap: 30px;
+
+    flex-direction: column;
+  }
+  .bg_COMMERCIAL {
+    width: 50%;
+    bottom: -60px;
+    left: -10px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .cmp_title {
+    font-size: 21px;
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .cmp_img_title {
+    gap: 15px;
+  }
+  .cmp_img {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}

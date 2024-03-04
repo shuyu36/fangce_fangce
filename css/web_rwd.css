@@ -17,6 +17,7 @@
   max-width: 1920px;
   margin: auto;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .rwd1_content {
@@ -34,6 +35,11 @@
 
 .rwd1_content img {
   width: 50%;
+}
+.bg_RWD {
+  width: 20%;
+  position: absolute;
+  bottom: 0;
 }
 
 /* ---------------主內容二---------------- */
@@ -94,6 +100,11 @@
   .rwd2_content_text {
     font-size: 16px;
   }
+  .bg_RWD {
+    width: 20%;
+    position: absolute;
+    bottom: -110px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .rwd1_content_text {
@@ -110,6 +121,14 @@
   .rwd2_content img {
     width: 90%;
   }
+  .rwd_second_block {
+    margin: 80px auto;
+  }
+  .bg_RWD {
+    width: 30%;
+    position: absolute;
+    bottom: -110px;
+  }
 }
 @media only screen and (max-width: 575px) {
   .top_banner {
@@ -117,5 +136,8 @@
   }
   .rwd_second_title p {
     font-size: 16px;
+  }
+  .bg_RWD {
+    bottom: -70px;
   }
 }

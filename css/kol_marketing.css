@@ -4,7 +4,7 @@
   background: url(../image/kol_banner.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0 86%;
+  background-position: 0 45%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +19,7 @@
   margin: auto;
   margin-top: 50px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .kol_text {
@@ -60,12 +61,26 @@
   background-color: #ffe073;
   color: #3c2415;
 }
+
+.bg_KOL {
+  width: 15%;
+  position: absolute;
+  top: 15%;
+}
+@media only screen and (max-width: 768px) {
+  .bg_KOL {
+    width: 20%;
+    top: 22%;
+  }
+}
 @media only screen and (max-width: 575px) {
   .top_banner {
     height: 180px;
   }
-
-
+  .bg_KOL {
+    width: 34%;
+    top: 30%;
+  }
   .kol_img_text span {
     font-size: 14px;
     padding: 5px 13px;

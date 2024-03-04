@@ -20,11 +20,14 @@
 .history_text {
   margin: 60px 20px;
 }
+
 .bg_COMPANY {
-  top: 180px;
+  bottom: -70px;
   right: 0;
   position: absolute;
+  width: 40%;
 }
+
 /* ---------------------專業團隊-------------------------- */
 
 .team_block {
@@ -127,37 +130,77 @@
   bottom: -2rem;
 }
 
-/* -----------------------合作案例------------------------ */
-.case_block {
-  max-width: 1920px;
+/* --------------跑馬燈-------------- */
+.test {
+  overflow: hidden;
+  margin-top: 40px;
+}
+.logo-wall {
+  display: flex;
 }
 
-.case_carousel {
-  max-width: 1620px;
-  margin: 0 auto;
+.logo-wall .logo-wrapper {
+  display: flex;
+  animation: scroll 100s linear infinite;
 }
 
-.carousel_img {
-  text-align: center;
-  display: grid;
-  max-width: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 15px;
-  margin: 0 auto;
+.logo-wall .logo-wrapper:nth-child(2) {
+  animation: scroll2 100s linear infinite;
+  animation-delay: -50s;
 }
 
+.logo-wall .logo-wrapper .logo {
+  width: 150px;
+  height: 150px;
+  margin: 0 10px;
+  border-radius: 50%;
+  /* background: black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.bg_CASE{
+  width: 20%;
+  height: auto;
+}
 
 @media only screen and (max-width: 1200px) {
   .swiper {
     width: calc(90% - 100px);
     margin: auto;
     height: auto;
+  }
 }
-}
-@media only screen and (max-width: 767px) {
 
-/* ---------------------團隊介紹-------------------------- */
-.team_img {
+
+
+@media only screen and (max-width: 991px) {
+  .logo-wall .logo-wrapper .logo {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* ---------------------團隊介紹-------------------------- */
+  .team_img {
     width: 100%;
   }
   .team_block {
@@ -169,27 +212,34 @@
   }
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 576px) {
   /* ------------banner-------------- */
   .top_banner {
     height: 180px;
   }
-/* ---------------------客戶好評-------------------------- */
 
-.title_black_white h1{
-  font-size: 22px;
+  .bg_COMPANY {
+    /* bottom: -70px; */
+    top: 80px;
+    right: 0;
+    position: absolute;
+    width: 80%;
 }
-
-.swiper {
-  width: calc(100% - 0px);
-  margin: auto;
+.bg_CASE {
+  width: 40%;
   height: auto;
 }
+  /* ---------------------客戶好評-------------------------- */
 
-/* ---------------------合作案例-------------------------- */
+  .title_black_white h1 {
+    font-size: 22px;
+  }
 
-.carousel_img {
-  gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
+  .swiper {
+    width: calc(100% - 0px);
+    margin: auto;
+    height: auto;
+  }
+
+  /* ---------------------合作案例-------------------------- */
 }

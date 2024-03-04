@@ -12,17 +12,12 @@
       crossorigin="anonymous"
     />
     <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/fitodac/bsnav@master/dist/bsnav.min.css"
-    />
-    <!-- swiper輪播 -->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!-- nav插件 -->
+    <!-- swiper輪播 -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/about_us.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,83 +30,110 @@
   </head>
   <body>
     <header>
-      <div class="navbar navbar-expand-sm bsnav bsnav-brand-top">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./image/fangce_logo_yellow.webp"
-            alt="方策logo"
-            width="auto"
-            height="auto"
-          />
-        </a>
-        <button
-          class="navbar-toggler toggler-spring"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-xs-center">
-          <ul class="navbar-nav navbar-mobile mr-0">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">首頁</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="./about_us.html">關於方策</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./design_case.html">設計作品</a>
-            </li>
-            <li class="nav-item dropdown dropdown-horizontal">
-              <a class="nav-link" href="#">服務項目<i class="caret"></i></a>
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="./web_rwd.html">客製化響應式官網</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./google.html">GOOGLE ADS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./social_advertising.html"
-                    >社群廣告</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./youtube.html"
-                    >YOUTUBE-全球最大的影音平台</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./kol_marketing.html"
-                    >KOL網紅行銷</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./360_photog.html">360環景攝影</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./commercial_photog.html"
-                    >商家攝影</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./google_pay.html"
-                    >商家預約金流系統</a
-                  >
-                </li>
-              </ul>
-            </li>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./image/fangce_logo_yellow.webp"
+              alt="方策logo"
+              width="auto"
+              height="auto"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >首頁</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./about_us.html">關於方策</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./design_case.html">設計作品</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="./countact_us.html">聯絡我們</a>
-            </li>
-          </ul>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  服務項目
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="./web_rwd.html"
+                      >客製化響應式官網</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./google_ads.html">GOOGLE ADS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./social_advertising.html"
+                      >社群廣告</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./youtube.html"
+                      >YOUTUBE-全球最大的影音平台</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./kol_marketing.html"
+                      >KOL網紅行銷</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./360_photog.html"
+                      >360環景攝影</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./commercial_photog.html"
+                      >商業攝影</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./google_pay.html"
+                      >一訂能pay</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./graphic_design.html"
+                      >平面設計</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./countact_us.html">聯絡我們</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="bsnav-mobile">
-        <div class="bsnav-mobile-overlay"></div>
-        <div class="navbar"></div>
-      </div>
+      </nav>
     </header>
+
     <!------------banner--------------->
     <article class="top_banner">
       <div
@@ -125,7 +147,7 @@
         <p style="color: #fff; font-size: 40px">About Fangce</p>
         <div style="display: inline-flex">
           <p style="color: #ffd645; font-weight: 700; font-size: 25px">關於</p>
-          <p style="color: #fff; font-weight: 100; font-size: 25px">我們</p>
+          <p style="color: #fff; font-weight: 100; font-size: 25px">方策</p>
         </div>
       </div>
     </article>
@@ -140,7 +162,7 @@
       >
         <ol class="breadcrumb" style="margin: 0">
           <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
-          <li class="breadcrumb-item active" aria-current="page">關於我們</li>
+          <li class="breadcrumb-item active" aria-current="page">關於方策</li>
         </ol>
       </nav>
     </div>
@@ -150,19 +172,19 @@
       <div class="history_text">
         <span class="title_blue_black">
           <h1>OUR</h1>
-          <h1>SERVICE</h1>
+          <h1>HISTORY</h1>
         </span>
-        <h2>服務項目</h2>
+        <h2>創立沿革</h2>
       </div>
+      <img
+      src="./image/COMPANY.webp"
+      alt="COMPANY背景圖"
+      class="bg_COMPANY"
+      width="70%"
+      height="auto"
+    />
       <div>
-        <img
-          src="./image/COMPANY.webp"
-          alt="COMPANY背景圖"
-          class="bg_COMPANY"
-          width="70%"
-          height="auto"
-          style="margin: -105px 0 0 0px; max-width: 600px"
-        />
+       
         <picture
           style="
             display: flex;
@@ -173,7 +195,7 @@
         >
           <!-- 適用於小於 575px 寬度的視窗 -->
           <source
-            media="(max-width: 575px)"
+            media="(max-width: 576px)"
             srcset="./image/history_mobile.webp"
           />
 
@@ -189,7 +211,7 @@
     </section>
 
     <!-- 核心價值 -->
-    <section class="core_value_block">
+    <div class="core_value_block">
       <div class="core_value_text">
         <span class="title_black_white">
           <h1>OUR</h1>
@@ -217,7 +239,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </div>
 
     <!-- 專業團隊 -->
     <section class="team_block">
@@ -246,7 +268,7 @@
     </section>
 
     <!-- 客戶好評 -->
-    <section class="customer_block">
+    <div class="customer_block">
       <div class="customer_countent">
         <div class="customer_text">
           <span class="title_black_white">
@@ -362,309 +384,676 @@
         <div class="swiper-button-prev"></div> -->
         </div>
       </div>
-    </section>
+    </div>
 
     <!-----------------------合作案例--------------------------- -->
-
-    <section class="case_block">
-      <div
-        id="carouselExampleControls"
-        class="carousel slide case_carousel"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="d-block w-100">
-              <div class="carousel_img">
-                <img
-                  src="./image/LOGO-1.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-2.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-3.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-4.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-5.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-6.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-7.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-8.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-9.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-10.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-              </div>
-            </div>
+   
+    <!-- 跑馬燈 -->
+    <article class="test">
+      <div class="logo-wall">
+        <div class="logo-wrapper first">
+          <div class="logo">
+            <img
+              src="./image/LOGO-1.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
           </div>
-          <div class="carousel-item">
-            <div class="d-block w-100">
-              <div class="carousel_img">
-                <img
-                  src="./image/LOGO-11.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-12.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-13.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-14.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-15.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-16.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-17.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-18.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-19.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-                <img
-                  src="./image/LOGO-20.webp"
-                  alt=""
-                  width="100%"
-                  height="auto"
-                />
-              </div>
-            </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-2.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
           </div>
-          <div class="carousel-item">
-            <div class="d-block w-100">
-              <div class="carousel_img">
-                <img
-                src="./image/LOGO-21.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-22.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-23.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-24.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-25.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-26.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-27.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-28.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-29.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-30.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              </div>
-            </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-3.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
           </div>
-          <div class="carousel-item">
-            <div class="d-block w-100">
-              <div class="carousel_img">
-                <img
-                src="./image/LOGO-31.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-32.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-33.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-34.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-35.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-36.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-37.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-38.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-39.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              <img
-                src="./image/LOGO-40.webp"
-                alt=""
-                width="100%"
-                height="auto"
-              />
-              </div>
-            </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-4.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-5.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-6.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-7.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-8.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-9.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-10.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-1.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-2.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-3.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-4.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-5.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-6.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-7.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-8.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-9.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-10.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="logo-wrapper second">
+          <div class="logo">
+            <img
+              src="./image/LOGO-11.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-12.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-13.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-14.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-15.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-16.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-17.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-18.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-19.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-20.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-11.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-12.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-13.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-14.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-15.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-16.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-17.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-18.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-19.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-20.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+        </div>
       </div>
-      <img
-        src="./image/CASE.webp"
-        alt=""
-        width="50%"
-        height="auto"
-        style="margin-bottom: -60px;max-width: 300px;"
-      />
-    </section>
+      <div class="logo-wall">
+        <div class="logo-wrapper first">
+          <div class="logo">
+            <img
+              src="./image/LOGO-21.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-22.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-23.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-24.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-25.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-26.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-27.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-28.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-29.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-30.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-21.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-22.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-23.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-24.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-25.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-26.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-27.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-28.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-29.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-30.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+        </div>
+        <div class="logo-wrapper second">
+          <div class="logo">
+            <img
+              src="./image/LOGO-31.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-32.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-33.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-34.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-35.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-36.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-37.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-38.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-39.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-40.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-31.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-32.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-33.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-34.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-35.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-36.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-37.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-38.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-39.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="logo">
+            <img
+              src="./image/LOGO-40.webp"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+        </div>
+      </div>
+     
+
+      <div class="bg_CASE">
+        <img
+          src="./image/CASE.webp"
+          alt=""
+          width="285px"
+          height="126px"
+        />
+      </div>
+    </article>
+
     <!----------------------footer--------------------------- -->
     <footer>
       <div class="footer">
@@ -727,6 +1116,5 @@
 
     <script src="./js/swiper-bundle.js"></script>
     <script src="./js/swiper.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fitodac/bsnav@master/dist/bsnav.min.js"></script>
   </body>
 </html>

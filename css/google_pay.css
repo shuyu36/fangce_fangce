@@ -1,0 +1,43 @@
+/* ---------------標題banner---------------- */
+.top_banner {
+    height: 230px;
+    background: url(../image/googlepay_banner.webp);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    background-position: 0 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -5;
+}
+
+
+
+
+/* ---------------圖片區塊---------------- */
+
+.googlePay_block{
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+}
+
+.google_text p{
+    font-size: 17px;
+    color: #106393;
+    margin-bottom: 20px;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+    .google_text p {
+        font-size: 13px;
+
+    }
+  }
+  

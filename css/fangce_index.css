@@ -14,6 +14,8 @@ h1 {
 .bg_ABOUT {
   position: absolute;
   left: 0;
+  width: 30%;
+  height: auto;
 }
 
 /* 文字 */
@@ -57,6 +59,7 @@ h1 {
 
 .service_icon li:hover {
   transform: scale(1.3); /* 放大 */
+  color: #106393;
 }
 
 .service_icon li a {
@@ -153,8 +156,9 @@ h1 {
   align-content: center;
   align-items: center;
 }
-.title_marketing h2 {
+.title_marketing p {
   font-weight: 700;
+  font-size: 30px;
 }
 
 .marketing_block ul {
@@ -197,13 +201,12 @@ h1 {
 .media_block {
   background: #f4f4f4;
   padding: 50px;
-  padding-top: 200px;
   margin: 0;
 }
 
 .media_top {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   max-width: 1320px;
   margin: auto;
@@ -216,11 +219,11 @@ h1 {
   /* padding-left:50px; */
 }
 .media_block ul {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   margin: 0 auto;
   max-width: 1420px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 .media_block li {
   text-align: center;
@@ -234,99 +237,10 @@ h1 {
   font-weight: 700;
 }
 
-/* 動畫 */
-.media_animated {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-  /* transition: opacity 0.8s ease-in-out,transform 3s ease; */
-}
-
-.media_animated img {
-  position: absolute;
-}
-
-.media_animated div {
-  position: relative;
-  text-align: center;
-  color: #fff;
-}
-/* .media_animating .media_animated {
-  opacity: 1;
-} */
-
-.el_rwd img {
-  width: 150px;
-  height: auto;
-}
-.el_seo img {
-  width: 180px;
-  height: auto;
-}
-.el_global img,
-.el_blog img,
-.el_fb img,
-.el_google img,
-.el_gs img,
-.el_ig img {
-  width: 50px;
-  height: auto;
-}
-
-.media_animating .el_rwd {
-  transform: translate(270px, -140px);
-  animation: bounce infinite 5s;
-}
-.media_animating .el_global {
-  transform: translate(120px, -80px);
-  animation: bounce infinite 5s;
-}
-.media_animating .el_fb {
-  transform: translate(200px, -10px);
-  animation: bounce infinite 4s;
-}
-.media_animating .el_ig {
-  transform: translate(340px, -18px);
-  animation: bounce infinite 5s;
-}
-.media_animating .el_blog {
-  transform: translate(548px, -160px);
-  animation: bounce infinite 5s;
-}
-.media_animating .el_gs {
-  transform: translate(443px, -100px);
-  animation: bounce infinite 4s;
-}
-.media_animating .el_google {
-  transform: translate(428px, 54px);
-  animation: bounce infinite 5s;
-}
-.media_animating .el_seo {
-  transform: translate(575px, -2px);
-  animation: bounce infinite 3s;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    margin: 0;
-  }
-  25% {
-    margin: -10px 0 0 0;
-  }
-  50% {
-    margin: 0;
-  }
-  75% {
-    margin: -10px 0 0 0;
-  }
-}
 
 /* RWD */
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1400px) {
   /* media */
   .media_top h1 {
     font-size: 35px;
@@ -336,275 +250,44 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 1266px) {
-  /* -----------media------------ */
-  .media_animating .el_global {
-    transform: translate(80px, -80px);
-  }
-  .media_animating .el_blog {
-    transform: translate(428px, -160px);
-  }
-  .media_animating .el_rwd {
-    transform: translate(200px, -140px);
-  }
-  .media_animating .el_fb {
-    transform: translate(150px, -10px);
-  }
-  .media_animating .el_ig {
-    transform: translate(260px, -18px);
-  }
-  .media_animating .el_gs {
-    transform: translate(333px, -100px);
-  }
-  .media_animating .el_google {
-    transform: translate(338px, 54px);
-  }
-  .media_animating .el_seo {
-    transform: translate(445px, -2px);
-  }
-}
-
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1200px) {
   /* .bg_ABOUT {
     width: 40%;
     height: auto;
   } */
   /* -----------media------------ */
+  .media_top h1 {
+    font-size: 28px;
+  }
   .media_block p {
-    font-size: 50px;
-  }
-  .media_top h1 {
-    font-size: 35px;
-  }
-  /* 動畫 */
-  .el_rwd img {
-    width: 120px;
-    height: auto;
-  }
-  .el_seo img {
-    width: 140px;
-    height: auto;
-  }
-  .el_global img,
-  .el_blog img,
-  .el_fb img,
-  .el_google img,
-  .el_gs img,
-  .el_ig img {
-    width: 40px;
-    height: auto;
-  }
-
-  .media_animating .el_global {
-    transform: translate(30px, -80px);
-  }
-  .media_animating .el_blog {
-    transform: translate(378px, -160px);
-  }
-  .media_animating .el_rwd {
-    transform: translate(150px, -140px);
-  }
-  .media_animating .el_fb {
-    transform: translate(100px, -10px);
-  }
-  .media_animating .el_ig {
-    transform: translate(210px, -18px);
-  }
-  .media_animating .el_gs {
-    transform: translate(283px, -100px);
-  }
-  .media_animating .el_google {
-    transform: translate(288px, 54px);
-  }
-  .media_animating .el_seo {
-    transform: translate(395px, -2px);
+    font-size: 55px;
   }
 }
 
-@media only screen and (max-width: 1070px) {
-  /* -----------服務項目------------ */
-
-  /* -----------media------------ */
-  .media_top h1 {
-    font-size: 30px;
-  }
-  .media_block h5 {
-    font-size: 18px;
-  }
-}
-@media only screen and (max-width: 992px) {
-  /* -----------media------------  */
-  /* 動畫 */
-
-  .media_block p {
-    font-size: 45px;
-  }
-  .media_block h5 {
-    font-size: 16px;
-  }
-  .media_top h1 {
-    font-size: 25px;
-  }
-  .el_rwd img {
-    width: 100px;
-    height: auto;
-  }
-  .el_seo img {
-    width: 120px;
-    height: auto;
-  }
-  .el_global img,
-  .el_blog img,
-  .el_fb img,
-  .el_google img,
-  .el_gs img,
-  .el_ig img {
-    width: 40px;
-    height: auto;
-  }
-
-  .media_animating .el_global {
-    transform: translate(30px, -80px);
-  }
-  .media_animating .el_blog {
-    transform: translate(378px, -160px);
-  }
-  .media_animating .el_rwd {
-    transform: translate(130px, -140px);
-  }
-  .media_animating .el_fb {
-    transform: translate(100px, -10px);
-  }
-  .media_animating .el_ig {
-    transform: translate(180px, -18px);
-  }
-  .media_animating .el_gs {
-    transform: translate(263px, -100px);
-  }
-  .media_animating .el_google {
-    transform: translate(240px, 54px);
-  }
-  .media_animating .el_seo {
-    transform: translate(350px, -2px);
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  /* -----------服務項目------------ */
-
-  /* .service_text h5 {
-    text-align: center;
-    width: 80vw;
-  } */
+@media only screen and (max-width: 991px) {
   /* -----------客製化行銷------------ */
 
   .marketing_block ul {
     gap: 45px 40px;
   }
-
-  /* --------media----------- */
-  /* .media_block ul {
-    gap: 60px;
-  } */
-  .media_animating .el_global {
-    transform: translate(20px, -100px);
-  }
-  .media_animating .el_seo {
-    transform: translate(280px, -2px);
-  }
-  .media_animating .el_blog {
-    transform: translate(320px, -160px);
-  }
-  .media_animating .el_fb {
-    transform: translate(60px, -10px);
-  }
-  .media_animating .el_ig {
-    transform: translate(150px, -38px);
-  }
-  .media_animating .el_google {
-    transform: translate(200px, 54px);
-  }
-  .media_animating .el_gs {
-    transform: translate(240px, -100px);
-  }
-}
-
-@media only screen and (max-width: 821px) {
-  /* -----------服務項目------------ */
-
-  /* -----------方策特色6大圖片------------ */
-  /* 
-  .feature_img ul {
-    grid-template-columns: 1fr 1fr;
-  } */
-
-  /* -----------客製化行銷------------ */
-  /* .marketing_block li p {
-    padding: 38px 18px 50px;
-  } */
   /* -----------media------------ */
-  .media_block {
-    padding: 40px;
-    padding-top: 120px;
+  .media_top {
+    flex-direction: column;
   }
-  .el_rwd img {
-    width: 80px;
-    height: auto;
-  }
-  .el_seo img {
-    width: 90px;
-    height: auto;
-  }
-  .el_global img,
-  .el_blog img,
-  .el_fb img,
-  .el_google img,
-  .el_gs img,
-  .el_ig img {
-    width: 30px;
-    height: auto;
-  }
-  .media_top h1 {
-    font-size: 21px;
-  }
+
   .media_block p {
-    font-size: 40px;
+    font-size: 55px;
   }
-  .media_animating .el_global {
-    transform: translate(20px, -70px);
-  }
-  .media_animating .el_fb {
-    transform: translate(50px, -10px);
-  }
-  .media_animating .el_rwd {
-    transform: translate(100px, -80px);
-  }
-  .media_animating .el_ig {
-    transform: translate(130px, -10px);
-  }
-  .media_animating .el_gs {
-    transform: translate(180px, -60px);
-  }
-  .media_animating .el_google {
-    transform: translate(190px, 40px);
-  }
-  .media_animating .el_seo {
-    transform: translate(260px, -25px);
-  }
-  .media_animating .el_blog {
-    transform: translate(260px, -100px);
+  .media_block ul {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 769px) {
   /* -----------服務項目------------ */
-  /* .service_icon li a {
-    font-size: 14px;
+  .service_icon ul {
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  .service_icon li h5 {
-    font-size: 16px;
-  } */
-
   /* -----------客製化行銷------------ */
   .marketing_block ul {
     gap: 45px 20px;
@@ -613,72 +296,17 @@ h1 {
     padding: 38px 8px 50px;
   }
   /* -----------media------------ */
-  /* .media_block ul {
-    gap: 40px;
-  } */
-  .media_block {
-    padding: 40px;
-  }
-  .media_top {
-    align-items: center;
-    justify-content: center;
-  }
-  .media_top h1 {
-    font-size: 19px;
-    padding-bottom: 200px;
-  }
-  .media_block h5 {
-    font-size: 14px;
-  }
+
   .media_block p {
-    font-size: 35px;
-  }
-
-  /* 動畫 */
-  .media_animating .el_rwd {
-    transform: translate(-300px, 10px);
-  }
-  .media_animating .el_global {
-    transform: translate(-390px, 50px);
-  }
-  .media_animating .el_fb {
-    transform: translate(-330px, 100px);
-  }
-  .media_animating .el_seo {
-    transform: translate(-80px, 95px);
-  }
-  .media_animating .el_google {
-    transform: translate(-170px, 40px);
-  }
-  .media_animating .el_gs {
-    transform: translate(-50px, 0px);
-  }
-  .media_animating .el_blog {
-    transform: translate(20px, 60px);
-  }
-  .media_animating .el_ig {
-    transform: translate(-250px, 70px);
+    font-size: 45px;
   }
 }
 
-/* 電腦版所有樣式 */
-@media (min-width: 576px) {
-}
-
-@media only screen and (max-width: 604px) {
-  /* -----------所有區塊的bottom -----------*/
-  /* 輪播圖 */
-  /* .carousel {
-    margin-bottom: 50px;
-  } */
-  /* 服務項目 */
-
-  /* 方策特色6大圖 */
-  /* .feature_img ul {
-    margin: 0 auto;
+@media only screen and (max-width: 576px) {
+  .bg_ABOUT {
+    width: 60%;
+    top: 40%;
   }
-   */
-
   /* -----------服務項目------------ */
 
   .service_icon ul {
@@ -697,22 +325,6 @@ h1 {
     padding-top: 0;
     padding: 0 0px 50px;
   }
-
-  /* -----------media------------ */
-  /* .media_block p {
-    font-size: 35px;
-  }
-  .media_block ul {
-    gap: 20px;
-  } */
-  .media_block ul {
-    margin: 20px;
-    display: grid;
-    gap: 30px;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media only screen and (max-width: 575px) {
   /* -----------輪播圖------------ */
   .carousel-inner {
     width: 100%;
@@ -724,18 +336,16 @@ h1 {
   .carousel_2 img {
     content: url("../image/index_banner_mobile__2.webp");
   }
+  .carousel_3 img {
+    content: url("../image/index_banner_mobile__3.webp");
+  }
+  .carousel_4 img {
+    content: url("../image/index_banner_mobile__4.webp");
+  }
   /* -----------背景圖------------ */
-  /* .bg_ABOUT {
-       top: 90%; 
-      width: 50%;
-    }  */
   .media_block {
     padding: 30px;
   }
-}
-@media only screen and (max-width: 536px) {
-  /* -----------服務項目------------ */
-
   /* -----------客製化行銷------------ */
   /* .title_marketing {
       padding-bottom: 10px;
@@ -747,89 +357,18 @@ h1 {
   /* .media_block p {
       font-size: 50px;
     }*/
-  .media_block ul {
-    margin: 20px;
-    flex-wrap: wrap;
+  .media_top h1 {
+    font-size: 25px;
+  }
+  .media_block p {
+    font-size: 35px;
   }
   .marketing_block {
     background-image: url(../image/index_marketing_bg_mobile.webp);
   }
-}
-@media only screen and (max-width: 460px) {
-  /* .marketing_block ul {
-      padding: 20px;
-    } */
-  /* -----------media------------ */
-
-  /* .media_block p {
-      font-size: 40px;
-    } */
-  /* .media_top h1 {
-      font-size: 20px;
-      padding-bottom: 200px;
-    } */
-
-  /* 動畫 */
-  .media_animating .el_blog {
-    transform: translate(10px, 50px);
-  }
-  .media_animating .el_global {
-    transform: translate(-330px, 50px);
-  }
-  .media_animating .el_fb {
-    transform: translate(-290px, 100px);
-  }
-  .media_animating .el_ig {
-    transform: translate(-220px, 70px);
-  }
-  .media_animating .el_google {
-    transform: translate(-150px, 20px);
-  }
-  .media_animating .el_seo {
-    transform: translate(-90px, 85px);
-  }
-  .media_animating .el_gs {
-    transform: translate(-70px, -10px);
-  }
-  .media_animating .el_rwd {
-    transform: translate(-260px, -10px);
-  }
-}
-@media only screen and (max-width: 430px) {
   /* -----------服務項目------------ */
 
   .feature_img ul {
     grid-template-columns: 1fr;
   }
-}
-
-@media only screen and (max-width: 415px) {
-  /* -----------media------------ */
-  /* 
-    .media_top h1 {
-      font-size: 17px;
-    } */
-
-  /* .feature_img ul {
-      gap: 20px;
-    } */
-}
-
-@media only screen and (max-width: 390px) {
-  /* .media_block p {
-      font-size: 32px;
-    } */
-}
-@media only screen and (max-width: 375px) {
-  .media_animating .el_global {
-    transform: translate(-320px, 50px);
-  }
-
-  /* 
-  .media_block ul {
-    margin: 0px;
-  }
-  .media_top h1 {
-    font-size: 16px;
-  } */
 }

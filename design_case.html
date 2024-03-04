@@ -12,12 +12,7 @@
       crossorigin="anonymous"
     />
     <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/fitodac/bsnav@master/dist/bsnav.min.css"
-    />
-    <!-- nav插件 -->
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/design_case.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,98 +25,346 @@
   </head>
   <body>
     <header>
-      <div class="navbar navbar-expand-sm bsnav bsnav-brand-top">
-        <a class="navbar-brand" href="#">
-          <img src="./image/fangce_logo_yellow.webp" alt="方策logo" width="auto" height="auto"/>
-        </a>
-        <button class="navbar-toggler toggler-spring" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-xs-center">
-          <ul class="navbar-nav navbar-mobile mr-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">首頁</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about_us.html">關於方策</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./design_case.html">設計作品</a>
-            </li>
-            <li class="nav-item dropdown dropdown-horizontal">
-              <a class="nav-link" href="#">服務項目<i class="caret"></i></a>
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="./web_rwd.html">客製化響應式官網</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./google.html">GOOGLE ADS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./social_advertising.html">社群廣告</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./youtube.html">YOUTUBE-全球最大的影音平台</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./kol_marketing.html">KOL網紅行銷</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./360_photog.html">360環景攝影</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./commercial_photog.html">商家攝影</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./google_pay.html">商家預約金流系統</a>
-                </li>
-              </ul>
-            </li>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./image/fangce_logo_yellow.webp"
+              alt="方策logo"
+              width="auto"
+              height="auto"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >首頁</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about_us.html">關於方策</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./design_case.html"
+                  >設計作品</a
+                >
+              </li>
 
-            <li class="nav-item"><a class="nav-link" href="./countact_us.html">聯絡我們</a></li>
-          </ul>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  服務項目
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="./web_rwd.html"
+                      >客製化響應式官網</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./google_ads.html">GOOGLE ADS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./social_advertising.html"
+                      >社群廣告</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./youtube.html"
+                      >YOUTUBE-全球最大的影音平台</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./kol_marketing.html"
+                      >KOL網紅行銷</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./360_photog.html"
+                      >360環景攝影</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./commercial_photog.html"
+                      >商業攝影</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./google_pay.html"
+                      >一訂能pay</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./graphic_design.html"
+                      >平面設計</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./countact_us.html">聯絡我們</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="bsnav-mobile">
-        <div class="bsnav-mobile-overlay"></div>
-        <div class="navbar"></div>
-      </div>
+      </nav>
     </header>
 
-<!------------banner--------------->
-<section class="top_banner">
-    <div
-      class="banner_title"
-      style="
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-      "
-    >
-      <p style="color: #fff; font-size: 40px">About Fangce</p>
-      <div style="display: inline-flex">
-        <p style="color: #ffd645; font-weight: 700; font-size: 25px">關於</p>
-        <p style="color: #fff; font-weight: 100; font-size: 25px">我們</p>
+    <!------------banner--------------->
+    <article class="top_banner">
+      <div
+        class="banner_title"
+        style="
+          display: inline-flex;
+          flex-direction: column;
+          align-items: center;
+        "
+      >
+        <p style="color: #fff; font-size: 40px">Design</p>
+        <div style="display: inline-flex">
+          <p style="color: #ffd645; font-weight: 700; font-size: 25px">設計</p>
+          <p style="color: #fff; font-weight: 100; font-size: 25px">作品</p>
+        </div>
       </div>
+    </article>
+
+    <!-----------------麵包屑-------------------->
+    <div
+      style="background: #fff; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
+    >
+      <nav
+        aria-label="breadcrumb"
+        style="max-width: 1420px; margin: auto; padding: 0.5rem"
+      >
+        <ol class="breadcrumb" style="margin: 0">
+          <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
+          <li class="breadcrumb-item active" aria-current="page">設計作品</li>
+        </ol>
+      </nav>
     </div>
-  </section>
 
+    <!-----------------主題標題-------------------->
+    <section class="top_block_text">
+      <div>
+        <p>
+          專業年資超過10年的設計團隊，經驗豐富，高效率定義視覺風格與產出，為客戶呈現最佳的品牌視覺設計與形象。
+        </p>
+      </div>
+    </section>
 
+    <!-- 專案介紹 -->
+    <section class="design_block">
+      <!-- 介紹一 -->
+      <div class="design_text">
+        <img
+          src="./image/design_img1.webp"
+          alt=""
+          width="280px"
+          height="280px"
+        />
+        <div>
+          <p style="font-size: 20px">專案企劃</p>
+          <p style="font-size: 16px">
+            針對品牌調性/產業特性/傳播溝通等面向，聚焦規劃精準方向。
+          </p>
+        </div>
+        <div class="design_yellow"></div>
+      </div>
+      <!-- 介紹二 -->
+      <div class="design_text design_mid">
+        <img
+          src="./image/design_img2.webp"
+          alt=""
+          width="280px"
+          height="280px"
+        />
+        <div>
+          <p style="font-size: 20px">專業設計</p>
+          <p style="font-size: 16px">
+            設計團隊成員皆為資歷超過10年的專業設計師。
+          </p>
+        </div>
+      </div>
+      <!-- 介紹三 -->
+      <div class="design_text">
+        <img
+          src="./image/design_img3.webp"
+          alt=""
+          width="280px"
+          height="280px"
+        />
+        <div>
+          <p style="font-size: 20px">專案客製</p>
+          <p style="font-size: 16px">
+            針對品牌調性/產業特性/傳播溝通等需求，客製化製作視覺設計。
+          </p>
+        </div>
+        <div class="design_blue"></div>
+      </div>
+    </section>
 
+    <!-- 製作流程 -->
+    <section class="history_block">
+      <div class="history_text">
+        <span class="title_blue_black">
+          <p>OUR</p>
+          <p>DESIGN PROCESS</p>
+        </span>
+        <h2>製作流程</h2>
+      </div>
 
+      <div class="design_process">
+        <img
+          src="./image/design_process1.webp"
+          alt=""
+          width="320px"
+          height="308px"
+        />
+        <img
+          src="./image/design_process2.webp"
+          alt=""
+          width="320px"
+          height="308px"
+        />
+        <img
+          src="./image/design_process3.webp"
+          alt=""
+          width="320px"
+          height="308px"
+        />
+        <img
+          src="./image/design_process4.webp"
+          alt=""
+          width="320px"
+          height="308px"
+        />
+      </div>
+    </section>
 
+    <!-- 文宣範例 -->
+    <section class="portfolio_block">
+      <div class="portfolio_text">
+        <span class="title_blue_black">
+          <p>OUR</p>
+          <p>DESIGN WORKS</p>
+        </span>
+        <h2>設計作品</h2>
+      </div>
 
-<!-----------------------footer--------------------------- -->
+      <div class="portfolio_img">
+        <div class="grid-container">
+          <a href="./image/portfolio_img1.webp" target="_blank" class="big">
+            <img src="./image/portfolio_img1.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img2.webp" target="_blank" class="width">
+            <img src="./image/portfolio_img2.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img3.webp" target="_blank" class="">
+            <img src="./image/portfolio_img3.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img4.webp" target="_blank" class="">
+            <img src="./image/portfolio_img4.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img5.webp" target="_blank" class="">
+            <img src="./image/portfolio_img5.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img6.webp" target="_blank" class="">
+            <img src="./image/portfolio_img6.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img7.webp" target="_blank" class="">
+            <img src="./image/portfolio_img7.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img8.webp" target="_blank" class="width">
+            <img src="./image/portfolio_img8.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img19.webp" target="_blank" class="">
+            <img src="./image/portfolio_img9.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img10.webp" target="_blank" class="big">
+            <img src="./image/portfolio_img10.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img11.webp" target="_blank" class="">
+            <img src="./image/portfolio_img11.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img12.webp" target="_blank" class="">
+            <img src="./image/portfolio_img12.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img13.webp" target="_blank" class="width">
+            <img src="./image/portfolio_img13.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img14.webp" target="_blank" class="big">
+            <img src="./image/portfolio_img14.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img15.webp" target="_blank" class="">
+            <img src="./image/portfolio_img15.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img17.webp" target="_blank" class="width">
+            <img src="./image/portfolio_img17.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img18.webp" target="_blank" class="width">
+            <img src="./image/portfolio_img18.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img19.webp" target="_blank" class="">
+            <img src="./image/portfolio_img19.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img20.webp" target="_blank" class="width">
+            <img src="./image/portfolio_img20.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img21.webp" target="_blank" class="big">
+            <img src="./image/portfolio_img21.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img22.webp" target="_blank" class="height">
+            <img src="./image/portfolio_img22.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img23.webp" target="_blank" class="">
+            <img src="./image/portfolio_img23.webp" alt="" />
+          </a>
+          <a href="./image/portfolio_img24.webp" target="_blank" class="width">
+            <img src="./image/portfolio_img24.webp" alt="" />
+          </a>
+          <!-- <a href="./image/portfolio_img25.webp" target="_blank" class="width">
+            <img src="./image/portfolio_img25.webp" alt="" />
+          </a> -->
+          <a href="./image/portfolio_img26.webp" target="_blank" class="width">
+            <img src="./image/portfolio_img26.webp" alt="" />
+          </a>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-----------------------footer--------------------------- -->
 
     <footer>
       <div class="footer">
         <div class="footer_logo">
-          <a href="./index.html" >
+          <a href="./index.html">
             <img
-            src="./image/fangce_logo_white.webp"
-            alt="方策logo"
-            width="267px"
-            height="auto"
+              src="./image/fangce_logo_white.webp"
+              alt="方策logo"
+              width="267px"
+              height="auto"
             />
           </a>
           <p>Copyright© 2023 方策數位有限公司 All Rights Reserved.</p>
@@ -165,13 +408,10 @@
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!-- countup.js -->
-    <script type="module" src="./js/startCounUp.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/gh/fitodac/bsnav@master/dist/bsnav.min.js"></script>
   </body>
 </html>

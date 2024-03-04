@@ -26,9 +26,15 @@ a:hover {
 
 section {
   margin: 50px auto;
+  padding: 0 20px;
+  max-width: 1620px;
 }
 section {
-  padding: 0 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 /* 字體 */
 .title_blue_black,
@@ -37,15 +43,30 @@ section {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.title_sec_text {
+  font-size: 30px;
+  padding: 5px 0;
+}
+
+.text_white{
+  color: #fff;
+}
+
 .title_blue_black {
   font-size: 40px;
 }
 .title_blue_black :nth-child(1) {
   font-weight: bold;
   color: #106393;
+  font-size: 25px;
 }
 .title_blue_black :nth-child(2) {
   font-weight: bold;
+  font-size: 25px;
+}
+
+.title_cn p {
+  font-size: 32px;
 }
 
 .title_black_white {
@@ -60,33 +81,58 @@ section {
   font-weight: bold;
 }
 
-.navbar-nav .nav-item.active > .nav-link,
-.navbar-nav .nav-item:active:focus > .nav-link,
-.navbar-nav .nav-item:active > .nav-link,
-.navbar-nav .nav-item:focus > .nav-link,
-.navbar-nav .nav-item:hover > .nav-link {
-  color: #106393;
-}
-.nav-item.active .caret,
-.nav-item:hover .caret {
-  border-top-color: #106393;
-}
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-.navbar-mobile {
-  gap: 100px;
-}
-
-.dropdown .navbar-nav .nav-item {
-  gap: 50px;
-}
 .nav-item {
   font-size: 18px;
   font-weight: bold;
 }
 
-/* 改nav插件預設字體顏色 */
+/* nav修改 */
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  flex-direction: column;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #106393;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #ffffff;
+  background-color: #106393;
+}
+.dropdown-menu {
+  border: 1px solid #0842986b;
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #106393;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #106393;
+}
+.navbar-light .navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-nav {
+  gap: 30px;
+}
 
 /*------------ 標題banner -------------*/
 
@@ -119,6 +165,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 /* ---------------主題標題---------------- */
@@ -218,15 +265,17 @@ section {
   justify-content: center;
   padding: 50px;
   gap: 50px;
+  /* margin-top: 100px; */
 }
 
 .footer_logo {
-  /* display: flex;
-  flex-direction: column; */
+  width: 250px;
+  height: auto;
 }
 .footer_logo p {
   font-size: 10px;
   letter-spacing: 0.5px;
+  text-align: center;
 }
 
 .footer_infomation li {
@@ -241,6 +290,11 @@ section {
   display: flex;
   gap: 10px;
   margin: 10px;
+}
+
+.footer_infomation img {
+  width: 22px;
+  height: auto;
 }
 
 .footer_page {
@@ -258,13 +312,10 @@ section {
 
 /* RWD */
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1400px) {
 }
 
-@media only screen and (max-width: 1266px) {
-}
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   /*--- 藍色小標 ---*/
 
   .all_title {
@@ -275,13 +326,18 @@ section {
   }
 }
 
-@media only screen and (max-width: 990px) {
-  .nav-item {
-    font-size: 15px;
-    font-weight: bold;
+@media only screen and (max-width: 991px) {
+  .navbar > .container,
+  .navbar > .container-fluid,
+  .navbar > .container-lg,
+  .navbar > .container-md,
+  .navbar > .container-sm,
+  .navbar > .container-xl,
+  .navbar > .container-xxl {
+    flex-direction: row;
   }
-  .navbar-mobile {
-    gap: 70px;
+  .navbar-nav {
+    gap: 5px;
   }
 }
 
@@ -300,64 +356,17 @@ section {
 }
 
 @media only screen and (max-width: 769px) {
-  .navbar-mobile {
-    gap: 40px;
-  }
 }
 
 @media only screen and (max-width: 604px) {
-  /* -----------導覽列------------ */
-  .bsnav-mobile .navbar {
-    padding: 100px 0 15px;
-    transition: 0.4s ease-in-out;
-    transform: translate3d(300px, 0, 0);
-  }
-  .nav-item {
-    font-size: 13px;
-    font-weight: bold;
-  }
-  .navbar-mobile {
-    gap: 20px;
-  }
-  /* 核心價值 */
-  /* .core_value_block {
-    margin-bottom: 50px;
-  } */
   .core_value_content ul {
     flex-wrap: wrap;
     justify-content: center;
   }
-  /* .core_value_content li {
-    text-align: center;
-    width: 42%;
-  } */
 }
 
 /* nav手機改漢堡 */
 @media only screen and (max-width: 575px) {
-  .navbar-toggler .navbar-toggler-icon,
-  .navbar-toggler .navbar-toggler-icon::after,
-  .navbar-toggler .navbar-toggler-icon::before {
-    background-color: #106393;
-  }
-  .bsnav-brand-top {
-    padding-top: 10px;
-  }
-  .navbar {
-    padding: 0.5rem 1rem;
-  }
-  .navbar-nav .nav-item .nav-link {
-    font-size: 1.1rem;
-    line-height: 1.2;
-  }
-  .dropdown-horizontal .navbar-nav .nav-item .nav-link {
-    font-size: 0.9rem;
-    line-height: 1.2;
-  }
-  .top_banner {
-    height: 140px;
-  }
-
   /*--- 藍色小標 ---*/
 
   .all_title p {
@@ -375,9 +384,39 @@ section {
   .all_title_nobgc :nth-child(2) {
     font-size: 20px;
   }
+  .top_block_text p {
+    font-size: 16px;
+  }
+  .title_blue_black :nth-child(1) {
+    font-size: 22px;
+  }
+  .title_blue_black :nth-child(2) {
+    font-size: 22px;
+  }
+  
+  .title_black_white :nth-child(1) {
+    font-size: 22px;
+
+  }
+  .title_black_white :nth-child(2) {
+    font-size: 22px;
+
+  }
+  .title_sec_text {
+    font-size: 20px;
+}
   /*------------ 麵包屑 -------------*/
   .breadcrumb {
     font-size: 12px;
+  }
+  .footer {
+    background-color: #106393;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 30px;
+    gap: 20px;
   }
 }
 
@@ -388,14 +427,4 @@ section {
   h5 {
     font-size: 18px;
   }
-}
-@media only screen and (max-width: 415px) {
-  /* -----------核心價值------------ */
-  /* .core_value_content ul {
-      gap: 60px 20px;
-    }
-    .core_value_content li {
-      text-align: center;
-      width: 44%;
-    } */
 }

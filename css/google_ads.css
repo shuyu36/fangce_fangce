@@ -1,0 +1,145 @@
+/* ---------------標題banner---------------- */
+.top_banner {
+  height: 230px;
+  background: url(../image/googleads_banner.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -5;
+}
+
+.ads_top_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.ads_top_block p {
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: #106393;
+  display: inline;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.ads_top_text1,
+.ads_top_text2 {
+  padding: 0 20px;
+}
+/* ---------------google搜尋引擎---------------- */
+.search_block {
+  position: relative;
+}
+.search_cont {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.search_cont img {
+  max-width: 560px;
+  height: auto;
+}
+
+.bg_GOOGLEADS {
+  position: absolute;
+  width: 50%;
+  bottom: 5%;
+}
+
+/* ---------------多媒體聯播網---------------- */
+
+.network_block {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.network_img {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.marketing_content {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 40px;
+}
+
+.marketing_text {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  width: 50%;
+}
+.marketing_img {
+  width: 50%;
+}
+
+.mobile_img {
+  width: 75%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1400px) {
+  .network_img,
+  .mobile_img {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .network_img,
+  .mobile_img {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .network_img,
+  .mobile_img {
+    width: 100%;
+  }
+  .search_cont img {
+    max-width: 480px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ads_top_text1 {
+    width: 80%;
+  }
+  .ads_top_text2 {
+    width: 60%;
+  }
+  .all_title {
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .marketing_content {
+    flex-direction: column;
+  }
+  .marketing_text {
+    gap: 20px;
+    width: 90%;
+  }
+
+  .marketing_img {
+    width: 90%;
+  }
+}
