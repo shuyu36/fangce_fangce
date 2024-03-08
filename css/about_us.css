@@ -14,7 +14,7 @@
 /* ---------------------歷史沿革-------------------------- */
 .history_block {
   max-width: 1420px;
-  margin: 0 auto 100px;
+  margin: 0 auto 80px;
   position: relative;
 }
 .history_text {
@@ -26,6 +26,10 @@
   right: 0;
   position: absolute;
   width: 40%;
+}
+.his_img{
+  width: 95%;
+  margin: 0 auto;
 }
 
 /* ---------------------專業團隊-------------------------- */
@@ -48,15 +52,15 @@
   align-items: center;
   width: 40%;
 }
-.team_text span {
+.team_text {
   display: flex;
 }
-.team_text span :nth-child(1) {
+.team_text div :nth-child(1) {
   color: #106393;
 }
 .team_text p {
   font-size: 30px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 .team_countent {
   margin-bottom: 30px;
@@ -241,5 +245,10 @@
     height: auto;
   }
 
-  /* ---------------------合作案例-------------------------- */
+  /* ---------------------歷史沿革-------------------------- */
+  .his_img{
+    width: 65%;
+    margin: 0 auto;
+  }
+
 }

@@ -36,6 +36,11 @@ img {
   width: 100%;
   height: auto;
 }
+
+.container-fluid img{
+  width: 180px;
+  height: auto;
+}
 /* 字體 */
 .title_blue_black,
 .title_black_white {

@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- 載入字體 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
@@ -49,10 +51,7 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a
-                  class="nav-link "
-                  aria-current="page"
-                  href="./index.html"
+                <a class="nav-link" aria-current="page" href="./index.html"
                   >首頁</a
                 >
               </li>
@@ -84,10 +83,14 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./google_ads.html">GOOGLE ADS</a>
+                    <a class="dropdown-item" href="./google_ads.html"
+                      >GOOGLE ADS</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item active"  href="./social_advertising.html"
+                    <a
+                      class="dropdown-item active"
+                      href="./social_advertising.html"
                       >社群廣告</a
                     >
                   </li>
@@ -97,7 +100,7 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item " href="./kol_marketing.html"
+                    <a class="dropdown-item" href="./kol_marketing.html"
                       >KOL網紅行銷</a
                     >
                   </li>
@@ -213,7 +216,7 @@
         <span>廣告介紹</span>
       </div>
       <div class="first_block img_block">
-        <div class="first_img">
+        <div class="first_img" style="max-width: 1050px; margin: 30px auto">
           <img
             src="./image/fb_first_img_1.webp"
             alt=""
@@ -232,19 +235,21 @@
           alt=""
           width="648px"
           height="230px"
+          style="max-width: 1050px; display: flex; margin: 30px auto"
         />
       </div>
     </section>
-    
+
     <!-----------------應用程式廣告介紹-------------------->
     <section class="advertise_block">
-        <img
-          src="./image/SOCIAL.webp"
-          alt=""
-          width="80%"
-          height="auto"
-          class="bg_SOCIAL"
-        />
+      <img
+        src="./image/SOCIAL.webp"
+        alt=""
+        width="80%"
+        height="auto"
+        class="bg_SOCIAL"
+        data-aos="fade-down-right"
+      />
       <div class="all_title_nobgc">
         <span>AUDIENCE NETWORK</span>
         <span>應用程式廣告介紹</span>
@@ -332,5 +337,10 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -42,11 +42,13 @@
 .price_gery {
   background-color: #ebebeb;
   color: #000;
+  transition: transform 0.3s ease-in-out;
 }
 
 .price_blue {
   background: rgba(16, 99, 147, 0.8);
   color: #fff;
+  transition: transform 0.3s ease-in-out;
 }
 
 .price_text {
@@ -59,7 +61,18 @@
   bottom: -130px;
   width: 40%;
   left: -120px;
-  z-index: -1;
+  z-index: 1;
+}
+
+.price_gery:hover{
+  background: rgba(16, 99, 147, 0.8);
+  color: #fff;
+  transform: scale(1.1);
+}
+.price_blue:hover{
+  background:#ebebeb ;
+  color: #000;
+  transform: scale(1.1);
 }
 
 /* ---------------圖片區塊---------------- */
@@ -111,6 +124,7 @@
 .cmp_img_title li.selected {
   color: #106393;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -149,7 +163,7 @@
     flex-direction: column;
   }
   .cmp_img_title {
-    gap: 15px;
+    gap: 10px;
   }
   .cmp_img {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));

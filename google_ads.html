@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
+        <!-- aos -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- 載入字體 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
@@ -12,7 +14,10 @@
       crossorigin="anonymous"
     />
     <!-- bootstrap -->
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/google_ads.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -140,6 +145,7 @@
           flex-direction: column;
           align-items: center;
         "
+        data-aos="fade-down" data-aos-duration="2000"
       >
         <p style="color: #fff; font-size: 40px">Google Ads</p>
         <div style="display: inline-flex">
@@ -168,14 +174,14 @@
     </div>
 
     <!-----------------主題標題-------------------->
-    <section class="top_block_text">
+    <section class="top_block_text" data-aos="fade-up" data-aos-duration="2000">
       <div>
         <p>一個平台即可達成所有目標</p>
       </div>
     </section>
 
     <!-----------------第一介紹區塊-------------------->
-    <section class="ads_top_block">
+    <section class="ads_top_block" data-aos="fade-up" data-aos-duration="2000">
       <div class="ads_top_text1">
         <picture>
           <!-- 適用於小於 576px 寬度的視窗 -->
@@ -230,9 +236,9 @@
             只要客戶有主動搜尋需求時，廣告就會立即出現<br />搜尋引擎版位：上最多4則–下最多3則
           </p>
         </div>
-        <img src="./image/ads_search.webp" alt="" />
+        <img src="./image/ads_search.webp" alt=""/>
       </div>
-      <img src="./image/GOOGLE ADS.webp" alt="" class="bg_GOOGLEADS" />
+      <img src="./image/GOOGLE ADS.webp" alt="" class="bg_GOOGLEADS" data-aos="fade-right"/>
     </section>
 
     <!----------------多媒體聯播網-------------------->
@@ -250,7 +256,7 @@
           <p>主動出擊.把訊息傳給對的人</p>
         </div>
       </div>
-      <div style="text-align: center; max-width: 1000px; margin: 0 auto">
+      <div style="text-align: center; max-width: 1000px; margin: 0 auto " >
         <p>
           全世界超過兩百萬的媒體聯播網，行銷無國界、台灣多體聯播網超過2萬個(觸及率93%上)文字廣告、圖片廣告、動態影音廣告、行動廣告。
         </p>
@@ -264,7 +270,7 @@
           <p>多媒體聯播網範例</p>
         </div>
         <div class="network_img">
-          <img src="./image/network_img1.webp" alt="" />
+          <img src="./image/network_img1.webp" alt="" width="1037px" height="299px"/>
         </div>
       </div>
 
@@ -326,7 +332,7 @@
         </div>
       </div>
       <div class="mobile_img">
-        <img src="./image/android_img1.webp" alt="" />
+        <img src="./image/android_img1.webp" alt="" width="1185px" height="555px"/>
       </div>
     </section>
 
@@ -350,7 +356,7 @@
         </div>
       </div>
       <div class="mobile_img">
-        <img src="./image/android_img2.webp" alt="" />
+        <img src="./image/android_img2.webp" alt="" width="1185px" height="479px" />
       </div>
     </section>
 
@@ -412,5 +418,9 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

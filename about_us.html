@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- 載入字體 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
@@ -86,7 +88,9 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./google_ads.html">GOOGLE ADS</a>
+                    <a class="dropdown-item" href="./google_ads.html"
+                      >GOOGLE ADS</a
+                    >
                   </li>
                   <li>
                     <a class="dropdown-item" href="./social_advertising.html"
@@ -143,6 +147,8 @@
           flex-direction: column;
           align-items: center;
         "
+        data-aos="fade-down"
+        data-aos-duration="2000"
       >
         <p style="color: #fff; font-size: 40px">About Fangce</p>
         <div style="display: inline-flex">
@@ -168,7 +174,7 @@
     </div>
 
     <!--history-->
-    <section class="history_block">
+    <section class="history_block" data-aos="fade-up" data-aos-duration="2000">
       <div class="history_text">
         <span class="title_blue_black">
           <h1>OUR</h1>
@@ -177,14 +183,14 @@
         <h2>創立沿革</h2>
       </div>
       <img
-      src="./image/COMPANY.webp"
-      alt="COMPANY背景圖"
-      class="bg_COMPANY"
-      width="70%"
-      height="auto"
-    />
-      <div>
-       
+        src="./image/COMPANY.webp"
+        alt="COMPANY背景圖"
+        class="bg_COMPANY"
+        width="70%"
+        height="auto"
+        data-aos="zoom-in-right"
+      />
+      <div class="his_img">
         <picture
           style="
             display: flex;
@@ -249,14 +255,16 @@
           alt="團隊"
           width="100%"
           height="auto"
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
         />
       </div>
       <div class="team_text">
-        <span>
-          <h2>OUR</h2>
-          <h2>WORK-TEAM</h2>
-        </span>
-        <p>專業團隊</p>
+        <div style="display: flex">
+          <p>OUR</p>
+          <p>WORK-TEAM</p>
+        </div>
+        <p style="margin-bottom: 30px">專業團隊</p>
         <div class="team_countent">
           方策數位累積超過20年實務經驗，因應各項業務需求，建立專業團隊六大部門：<br />
           ・行銷企劃 <br />・視覺設計 <br />・程式工程 <br />・環景攝影
@@ -271,10 +279,10 @@
     <div class="customer_block">
       <div class="customer_countent">
         <div class="customer_text">
-          <span class="title_black_white">
-            <h1>OUR</h1>
-            <h1>CUSTOMER-PRAISE</h1>
-          </span>
+          <div class="title_black_white">
+            <p>OUR</p>
+            <p>CUSTOMER-PRAISE</p>
+          </div>
           <h2>客戶好評</h2>
         </div>
 
@@ -387,7 +395,7 @@
     </div>
 
     <!-----------------------合作案例--------------------------- -->
-   
+
     <!-- 跑馬燈 -->
     <article class="test">
       <div class="logo-wall">
@@ -1042,7 +1050,6 @@
           </div>
         </div>
       </div>
-     
 
       <div class="bg_CASE">
         <img
@@ -1050,6 +1057,7 @@
           alt=""
           width="285px"
           height="126px"
+          data-aos="fade-down-right"
         />
       </div>
     </article>
@@ -1116,5 +1124,9 @@
 
     <script src="./js/swiper-bundle.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

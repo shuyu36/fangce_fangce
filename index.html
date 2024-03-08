@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- 載入字體 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
@@ -20,6 +22,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+TC&display=swap"
       rel="stylesheet"
     />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <title>方策官網</title>
   </head>
   <body>
@@ -83,7 +91,9 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./google_ads.html">GOOGLE ADS</a>
+                    <a class="dropdown-item" href="./google_ads.html"
+                      >GOOGLE ADS</a
+                    >
                   </li>
                   <li>
                     <a class="dropdown-item" href="./social_advertising.html"
@@ -187,6 +197,7 @@
         class="bg_ABOUT"
         width="30%"
         height="auto"
+        data-aos="zoom-in-right"
       />
       <div class="service_text">
         <div class="title_blue_black">
@@ -327,32 +338,56 @@
     <section class="feature_block">
       <div class="feature_img">
         <ul>
-          <li class="service_img service_1">
+          <li
+            class="service_img service_1"
+            data-aos="flip-down"
+            data-aos-duration="1500"
+          >
             <h5>優質服務</h5>
             <hr width="50%" align="center" />
             <h6>完整團隊/經驗豐富</h6>
           </li>
-          <li class="service_img service_2">
+          <li
+            class="service_img service_2"
+            data-aos="flip-down"
+            data-aos-duration="1500"
+          >
             <h5>GOOGLE廣告專案</h5>
             <hr width="50%" align="center" />
             <h6>市場最低價/競爭最優勢</h6>
           </li>
-          <li class="service_img service_3">
+          <li
+            class="service_img service_3"
+            data-aos="flip-down"
+            data-aos-duration="1500"
+          >
             <h5>整合行銷</h5>
             <hr width="50%" align="center" />
             <h6>客制規劃/高CP預算</h6>
           </li>
-          <li class="service_img service_4">
+          <li
+            class="service_img service_4"
+            data-aos="flip-down"
+            data-aos-duration="1500"
+          >
             <h5>專業分工</h5>
             <hr width="50%" align="center" />
             <h6>6大部門/各司其職</h6>
           </li>
-          <li class="service_img service_5">
+          <li
+            class="service_img service_5"
+            data-aos="flip-down"
+            data-aos-duration="1500"
+          >
             <h5>大數據分析</h5>
             <hr width="50%" align="center" />
             <h6>了解顧客/精準廣告</h6>
           </li>
-          <li class="service_img service_6">
+          <li
+            class="service_img service_6"
+            data-aos="flip-down"
+            data-aos-duration="1500"
+          >
             <h5>數位行銷諮詢</h5>
             <hr width="50%" align="center" />
             <h6>釐清定位/找到受眾</h6>
@@ -407,7 +442,9 @@
     <!-- 媒體數據 -->
     <div class="media_block">
       <div class="media_top">
-        <h1>運用多媒體互聯網平台整合<br />優化行銷，升級品牌形象</h1>
+        <h1 data-aos="fade-right" data-aos-duration="1500">
+          運用多媒體互聯網平台整合<br />優化行銷，升級品牌形象
+        </h1>
         <div class="media_animating">
           <div>
             <img src="./image/media_gif.gif" alt="" />
@@ -492,5 +529,9 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

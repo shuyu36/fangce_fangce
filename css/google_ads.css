@@ -128,6 +128,9 @@
   .all_title {
     width: 240px;
   }
+  .bg_GOOGLEADS {
+    top: 35%;
+}
 }
 
 @media only screen and (max-width: 576px) {
@@ -142,4 +145,7 @@
   .marketing_img {
     width: 90%;
   }
+  .bg_GOOGLEADS {
+    top: 38%;
+}
 }

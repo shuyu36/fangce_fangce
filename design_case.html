@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
+        <!-- aos -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- 載入字體 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
@@ -132,7 +134,7 @@
     </header>
 
     <!------------banner--------------->
-    <article class="top_banner">
+    <article class="top_banner"  >
       <div
         class="banner_title"
         style="
@@ -140,6 +142,8 @@
           flex-direction: column;
           align-items: center;
         "
+        data-aos="fade-down"
+        data-aos-duration="2000"
       >
         <p style="color: #fff; font-size: 40px">Design</p>
         <div style="display: inline-flex">
@@ -165,7 +169,8 @@
     </div>
 
     <!-----------------主題標題-------------------->
-    <section class="top_block_text">
+    <section class="top_block_text"  data-aos="fade-up"
+    data-aos-duration="2000">
       <div>
         <p>
           專業年資超過10年的設計團隊，經驗豐富，高效率定義視覺風格與產出，為客戶呈現最佳的品牌視覺設計與形象。
@@ -174,7 +179,8 @@
     </section>
 
     <!-- 專案介紹 -->
-    <section class="design_block">
+    <section class="design_block"  data-aos="fade-up"
+    data-aos-duration="2000">
       <!-- 介紹一 -->
       <div class="design_text">
         <img
@@ -413,5 +419,10 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -11,6 +11,8 @@
       integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
       crossorigin="anonymous"
     />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- bootstrap -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/commercial_photog.css" />
@@ -141,6 +143,8 @@
           flex-direction: column;
           align-items: center;
         "
+        data-aos="fade-down"
+        data-aos-duration="2000"
       >
         <p style="color: #fff; font-size: 40px; text-align: center">
           Commercial photography
@@ -169,7 +173,7 @@
     </div>
 
     <!-----------------主題標題-------------------->
-    <section class="top_block_text">
+    <section class="top_block_text" data-aos="fade-up" data-aos-duration="2000">
       <div>
         <p>
           商業攝影是提升品牌形象和市場競爭力的關鍵一環<br />
@@ -180,14 +184,20 @@
     </section>
 
     <!-----------------主內容(一)標題-------------------->
-    <section class="cmp_first_block">
+    <section
+      class="cmp_first_block"
+    >
       <div class="cmp_title">
         <span style="color: #ffd645">專業商業攝影服務</span>
         <span> 捕捉您企業的獨特魅力</span>
       </div>
     </section>
     <!-----------------主內容(一)-------------------->
-    <section style="position: relative">
+    <section
+      style="position: relative"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <p
         style="
           font-size: 30px;
@@ -200,7 +210,7 @@
       </p>
 
       <div class="price_block">
-        <div class="price_gery price_text">
+        <div class="price_blue price_text">
           <p>平面商攝NT$5,000/2hr(精修10張照片)</p>
           <p>服務項目：商品攝影、食物攝影、空間攝影、人像攝影</p>
           <p>精修費用：加修$600/張</p>
@@ -214,7 +224,12 @@
       <p style="text-align: center; font-size: 16px; color: #106393">
         （其他需求另行報價，交通、住宿費用實報實銷）
       </p>
-      <img src="./image/COMMERCIAL.webp" alt="" class="bg_COMMERCIAL" />
+      <img
+        src="./image/COMMERCIAL.webp"
+        alt=""
+        class="bg_COMMERCIAL"
+        data-aos="fade-down-right"
+      />
     </section>
 
     <section>
@@ -227,7 +242,7 @@
 
       <!---------------- 圖片切換區 ---------------->
       <!-- 空間攝影 -->
-      <div class="space_img_block cmp_img " id="space_tab">
+      <div class="space_img_block cmp_img" id="space_tab">
         <a href="./image/space1.webp" target="_blank" class="width">
           <img src="./image/space1.webp" alt="" />
         </a>
@@ -243,7 +258,7 @@
       </div>
 
       <!-- 人像攝影 -->
-      <div class="portrait_img_block cmp_img " id="portrait_tab">
+      <div class="portrait_img_block cmp_img" id="portrait_tab">
         <a href="./image/portrait1.webp" target="_blank" class="">
           <img src="./image/portrait1.webp" alt="" />
         </a>
@@ -259,7 +274,7 @@
       </div>
 
       <!-- 商品攝影 -->
-      <div class="product_img_block cmp_img " id="product_tab">
+      <div class="product_img_block cmp_img" id="product_tab">
         <a href="./image/product1.webp" target="_blank" class="width">
           <img src="./image/product1.webp" alt="" />
         </a>
@@ -368,5 +383,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/commercial_photog.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
