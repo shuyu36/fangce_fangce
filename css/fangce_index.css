@@ -184,6 +184,7 @@ h1 {
   background: rgba(255, 255, 255, 0.2);
   padding: 38px 38px 50px;
   color: #fff;
+  margin-top: -30px;
 }
 
 .marketing_block li h5 {
@@ -191,10 +192,13 @@ h1 {
   width: 105px;
   height: 118px;
   text-align: center;
-  line-height: 118px;
+  display: flex;
+  /* line-height: 118px; */
   font-weight: 700;
   color: #3a3a3a;
-  margin-bottom: -30px;
+  /* margin-bottom: -30px; */
+  align-items: center;
+  justify-content: center;
 }
 
 /* ----------媒體數據---------- */

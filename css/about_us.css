@@ -133,6 +133,10 @@
 .swiper-pagination.swiper-pagination-1 {
   bottom: -2rem;
 }
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: #106393;
+}
 
 /* --------------跑馬燈-------------- */
 .test {
