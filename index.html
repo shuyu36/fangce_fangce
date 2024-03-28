@@ -27,6 +27,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
 
     <title>方策官網</title>
   </head>
@@ -452,8 +453,8 @@
         </div>
       </div>
       <ul class="number">
-        <li>
-          <p><span id="num1">0</span></p>
+        <!-- <li>
+          <p><span id="num1">40,013</span></p>
           <h5><span>至今協助商家數</span></h5>
         </li>
         <li>
@@ -466,6 +467,22 @@
         </li>
         <li>
           <p><span id="num4">78.6</span><span>%</span></p>
+          <h5><span>客戶續約率</span></h5>
+        </li> -->
+        <li>
+          <p><span class="counter">40,013</span></p>
+          <h5><span>至今協助商家數</span></h5>
+        </li>
+        <li>
+          <p><span class="counter">89.7</span><span>%</span></p>
+          <h5><span>提升成長率</span></h5>
+        </li>
+        <li>
+          <p><span class="counter">96.3</span><span>%</span></p>
+          <h5><span>客戶滿意度</span></h5>
+        </li>
+        <li>
+          <p><span class="counter">78.6</span><span>%</span></p>
           <h5><span>客戶續約率</span></h5>
         </li>
       </ul>
@@ -529,9 +546,34 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <!-- 數字效果 -->
+    <!-- <script type="module" src="https://www.thormcl.com/fangceWeb/js/startCounUp.js"></script> -->
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      // const counterUp = window.counterUp.default;
+
+      // const callback = (entries) => {
+      //   entries.forEach((entry) => {
+      //     const el = entry.target;
+      //     if (entry.isIntersecting && !el.classList.contains("is-visible")) {
+      //       counterUp(el, {
+      //         duration: 2000,
+      //         delay: 16,
+      //       });
+      //       el.classList.add("is-visible");
+      //     }
+      //   });
+      // };
+
+      // const els = document.querySelectorAll(".counter");
+      // els.forEach((el) => {
+      //   const IO = new IntersectionObserver(callback, { threshold: 1 });
+      //   IO.observe(el);
+      // });
     </script>
   </body>
 </html>
